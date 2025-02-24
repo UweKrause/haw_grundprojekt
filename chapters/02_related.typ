@@ -2,16 +2,36 @@
 
 = Verwandte Arbeiten
 
+/*
+TODO: Rückbezug
+"Wie schafft man es dieses Problem (aus Kap 1) anzugehen?"
+-> man schaut sich Lernkonzepte an
+*/
+
 Verschiedenste
 didaktische Konzepte
 bekräftigen,
 dass Lernende am erfolgreichsten lernen,
 wenn sie sich aktiv mit dem Lerngegenstand beschäftigen.
 
+/*
+TODO: EBENEN/STUFEN WOVON?
+Actice: Interaktion
+Bloom: Verständnis / Stufen im Lernprozess
+ICAP: ???
+*/
+
 Beispielsweise ist eine der Grundprinzipien des "Active Learning",
 die Lernenden "aktiv" zu halten.
 Dieser Theorie zufolge ist
 das alleinige Lesen von Informationen oft nicht "aktiv" genug.
+/*
+TODO:was ist mit "aktiv" gemeint?
+Bereits das Anstreichen von Textpassagen
+trägt zu einer besseren Verarbeitung des
+Stoffs
+bei.
+*/
 Solange Lernende sich nicht aktiv mit dem Lerngegenstand beschäftigen,
 werden sie dieser Theorie nach das Wissen nicht behalten.
 @eckstein_patterns_2002
@@ -46,6 +66,13 @@ die Interaktion mit dem Lerngegenstand
 den besten Lernerfolg verspricht.
 @chi_icap_2014
 
+/*
+TODO: Zusammenfassung
+Diesen Ansätzen ist gemein,
+je aktiver (bis hin zu interaktiv) man sich mit etwas beschäftigt,
+desto nicer.
+*/
+
 == Serious Games
 
 Eine im IT-Sicherheitsbereich geeignete
@@ -69,6 +96,10 @@ der
 "ernsten Spiele"
 vermittelt werden.
 Es können
+/*
+TODO: Vom Zitat lösen, das passt hier nicht.
+zB "auf das Problem fokussierte"
+*/
 fesselnde und kontrollierte
 Umgebungen
 geschaffen werden,
@@ -94,17 +125,52 @@ capture the flag
 die Interaktion von Lernenden
 erhöht werden kann,
 was zu besser entwickelten
-Fähigkeiten führt
+Fähigkeiten
+// TODO: Was für Fähigkeiten?
+führt
 @leune_using_2017
 .
 
+/*
+TODO: Zusammenfassung
+Deswegen ist es schlau
+ctf zu benutzen,
+um Kenntnisse
+für IT-Sicherheits
+zu vermitteln
+*/
+
 == Anforderungen an ernste Spiele
 
+/*
+TODO: Streichen
+Nicht die richtige Motivation.
+*/
 Da (Software-) Projekte
-oft aufgrund 
+oft aufgrund
 fehlender oder ungenügender
-Anforderungsanalyse scheitern 
+Anforderungsanalyse scheitern
 @ghanbari_utilizing_2015,
+/*
+TODO:Bessere Motivation finden
+Motivation ist ja eigentlich sowas wie
+"
+um diese Potential zu heben
+darf es nicht sein,
+dass Challenges
+falsch/unmotivierend/guessy...
+sind
+" TODO: positive Formulierung möglich?
+
+TODO: Anforderungen sehr knapp zusammenfassen (Vorgriff)
+Die Interaktionsgegenstand (die Challenge) muss
+wohldefiniert, strukturiert, ...?
+)
+sein.
+
+TODO: Satz einleiten
+Damit eine solche Challenge gebaut werden kann,
+*/
 wurden
 durch Kombination
 akademischer
@@ -119,7 +185,11 @@ Software-Entwickelnde richten
 @espinha_gasiba_requirements_2019
 .
 
-
+/* TODO: streichen
+Wird später ausführlich in Tabelleaufgelsitet.
+(ggf. Hinweis auf vollständige Auflistung in Tabelle X?
+(Fließtext oder Fußnote?))
+*/
 #[
   #set text(lang: "en")
   1. "Have a clearly defined learning goal objective"
