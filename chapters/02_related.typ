@@ -52,9 +52,14 @@ um Neues zu erschaffen.
 //
 @anderson_taxonomy_2001
 
-#figure(
-  image("../figures/bloomsPyramide.jpg"),
+#figure(  
+  muchpdf(
+  read("../figures/bloomsPyramide.pdf", encoding: none),
+  width: 80%,
+  alt: "Blooms Pyramide, eigene Darstellung",
+  ),
   caption: [Blooms Pyramide, nach @anderson_taxonomy_2001. Eigene Darstellung],
+  
 ) <pyramide>
 
 == ICAP (Interactive - Constructive - Active - Passive)
