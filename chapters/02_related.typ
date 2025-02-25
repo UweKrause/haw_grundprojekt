@@ -240,39 +240,47 @@ Und sei dies nur in einer simulierten Umgebung geschehen,
 so darf trotzdem davon ausgegangen werden,
 dass das zugrundeliegende Problem wirklich verstanden wurde.
 
+// TODO: besser Überschrift
+== Serious Games ermöglichen Interaktion
 
-== Serious Games
-
-Diese
+Die skizzierte
 Form der Interaktion
-sind sogenannte
-"ernste Spiele".
-Diese werden entwickelt,
-um die Spieler über reale Themen wie
+werden auch als
+"Serious Games"
+bezeichnet.
+//
+Allgemein
+werden diese entwickelt,
+um über reale Themen wie
 Gesundheitsfürsorge, Sicherheit oder Umweltfragen
 aufzuklären, zu schulen oder zu informieren.
 @cooper_software_2023
 //
-Serious Gaming
-kann
-auch das Lernen
+Wenn
+Serious Games
+das Lernen
 komplexer und
-sehr technischen Themen erleichtern.
+technischer Themen
+erleichtern,
+können
 Konzepte der IT-Sicherheit
-können ebenfalls mit
+ebenfalls mit
 Techniken aus diesem Bereich
 vermittelt werden.
 //
-Es können
+In
 Lernumgebungen
 für konkrete
-zu lernende Konzepte
-geschaffen werden,
-in der sich Spieler
-realistischen Herausforderungen stellen.
+zu lernende
+Konzepte
+der IT-Sicherheit
+stellen
+Spieler
+sich
+realistischen Herausforderungen.
 @cooper_designing_2023
 
-Werden bei diesen ernsten Spielen IT-Security Techniken vermittelt,
+Werden auf diese Art IT-Security Techniken vermittelt,
 findet dies üblicherweise im Rahmen von
 "capture the flag" (ctf)
 statt,
@@ -281,18 +289,21 @@ IT-Security-Wettbewerb.
 //
 Hier gibt es 
 verschiedene Typen von
-Aufgaben ("Challenges"),
+Aufgaben ("challenges"),
 beispielsweise im "Jeopardy-style",
-wo es für gelöste
+bei dem es für gelöste
 Aufgaben in unterschiedlichen Kategorien Punkte zu gewinnen gibt.
 @noauthor_ctftimeorg_nodate
 //
 Aufgaben in der Kategorie "Web"
+beispielsweise
 bestehen häufig aus
 einem Webserver,
 der den Spielern
 eine Website
-mit einer oder mehreren Schwachstellen
+mit einer oder mehreren
+absichtlich platzierten
+Schwachstellen
 zur Verfügung stellt.
 //
 Diesen Webserver gilt es anzugreifen,
@@ -312,13 +323,12 @@ und
 "capture the flag"-Aufgaben
 die Interaktion von Lernenden
 mit dem Lerngegenstand
-erhöht,
+erhöhen,
 was zu besser entwickelten
 Fähigkeiten
 im Umgang mit Sicherheitslücken
 führt
-@leune_using_2017
-.
+@leune_using_2017.
 
 Capture the Flag
 als
@@ -334,37 +344,27 @@ um Kenntnisse im Bereich IT-Sicherheit
 zu vermitteln.
 
 
-== Anforderungen an ernste Spiele
+== Anforderungen an serious games
 
-/*
-TODO: Streichen
-Nicht die richtige Motivation.
-*/
-Da (Software-) Projekte
-oft aufgrund
-fehlender oder ungenügender
-Anforderungsanalyse scheitern
-@ghanbari_utilizing_2015,
-/*
-TODO:Bessere Motivation finden
-Motivation ist ja eigentlich sowas wie
-"
-um diese Potential zu heben
-darf es nicht sein,
-dass Challenges
-falsch/unmotivierend/guessy...
-sind
-" TODO: positive Formulierung möglich?
-
-TODO: Anforderungen sehr knapp zusammenfassen (Vorgriff)
-Die Interaktionsgegenstand (die Challenge) muss
-wohldefiniert, strukturiert, ...?
-)
-sein.
-
-TODO: Satz einleiten
-Damit eine solche Challenge gebaut werden kann,
-*/
+Damit
+die eingesetzten Ressourcen
+möglichst optimal
+genutzt werden
+und
+der Interaktionsgegenstand
+auf
+das definierte Ziel
+einzahlt,
+müssen die
+Anforderungen
+an die Interaktionsumgebung
+klar formuliert sein.
+//
+Für 
+Serious Games
+die sich an
+praktizierende
+Software-Entwickelnde richten
 wurden
 durch Kombination
 akademischer
@@ -372,12 +372,6 @@ und industrieller
 Forschung
 15 Anforderungen
 #footnote[Die Anforderungen werden gemeinsam mit der folgenden Evaluation in @tabEvaluation aufgelistet.]
-für 
-Serious Games
-die sich an
-praktizierende
-Software-Entwickelnde richten
-definiert
+definiert.
 @espinha_gasiba_requirements_2019
-.
 
