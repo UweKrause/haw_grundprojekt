@@ -52,11 +52,16 @@ um Neues zu erschaffen.
 //
 @anderson_taxonomy_2001
 
-#figure(  
+#figure(
   muchpdf(
   read("../figures/bloomsPyramide.pdf", encoding: none),
   width: 80%,
-  alt: "Blooms Pyramide, eigene Darstellung",
+  alt: "Pramidenförmige Darstellung der Stufen von Blooms Taxonomie.
+  Die Basis bildet die Stufe 'remember'.
+  Darauf aufbauend folgen die Stufen
+  'understand', 'apply', 'analyze' und 'evaluate'.
+  Die Spitze der Üyramide bildet die Stufe 'create'.
+  "
   ),
   caption: [Blooms Pyramide, nach @anderson_taxonomy_2001. Eigene Darstellung],
   
