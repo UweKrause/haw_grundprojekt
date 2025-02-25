@@ -9,8 +9,7 @@
 == Ausblick
 
 Durch einen "import" anderer "Modelle" aus dem Unterhaltungsbereich
-könnten "Empfehlungen für Verbesserungen und Erkenntnisse zur Gestaltung und Entwicklung effektiverer SG [Serious Games]" übernommen werden @cooper_future_2023
-
+könnten "Empfehlungen für Verbesserungen und Erkenntnisse zur Gestaltung und Entwicklung effektiverer SG [Serious Games]" übernommen werden @wanickFutureDirectionsGames2023
 Die
 durchgeführte Evaluation
 sowohl der bestehenden CTF-Events
@@ -30,10 +29,10 @@ dem Übergeordneten Feld der "serious games" auch auf
 die entwickelte/n Challenge/s adaptiert werden.
 Ansätze hierfür finden sich
 zum Beispiel in
-[User Experience Evaluation Methods for Games in Serious Contexts] @cooper_user_2023
+[User Experience Evaluation Methods for Games in Serious Contexts] @kirginasUserExperienceEvaluation2023
 oder
 [Framework for evaluating Capture the Flag (CTF) security competitions]
-@raman_framework_2014
+@ramanFrameworkEvaluatingCapture2014
 
 Wird das Feedback der Teilnehmenden ernst genommen
 und liefern die Evaluations-Methoden gute Einblicke,

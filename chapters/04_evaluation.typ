@@ -4,14 +4,17 @@
 
 == Evaluation
 
-TODO: Die entstandene Challenge so evaluieren wie in @espinha_gasiba_requirements_2019 beschrieben.
+TODO: Die entstandene Challenge so evaluieren,
+wie in @espinhagasibaRequirementsSeriousGames2019
+beschrieben.
 - semi-strukturierte Interviews ()
 - Feedbackbogen (was hat gut funktioniert, was nicht)
 - Fragebogen, Evaluationsfragen
 
 Direkter Vergleich des Ergbenis der 
 EIGENEN Challenge
-mit den Challenges aus dem Requirements-Paper @espinha_gasiba_requirements_2019
+mit den Challenges
+aus dem Requirements-Paper @espinhagasibaRequirementsSeriousGames2019
 
 #figure(
   include("04_evaluation_table.typ"),

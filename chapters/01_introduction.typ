@@ -12,21 +12,21 @@
 - (nicht Pentester ausbilden)
 
 == Didaktische Basis
-- Blooms (revisited) Taxonomy @anderson_taxonomy_2001
-- ICAP (Interactive - Constructive - Active - Passive) @chi_icap_2014
+- Blooms (revisited) Taxonomy @andersonTaxonomyLearningTeaching2001
+- ICAP (Interactive - Constructive - Active - Passive) @chiICAPFrameworkLinking2014
 
 == Vorgehen:  
 ctf als Elemente aus Pentester-"Ausbildung" nutzen für Security Awareness bei Programmierern
 - ctf as serious game
-	- Designing a Serious Game for Cybersecurity Education @cooper_designing_2023 
-	- Software Engineering for Games in Serious Contexts @cooper_software_2023
-
+	- Designing a Serious Game for Cybersecurity Education @costaDesigningSeriousGame2023
+	- Software Engineering for Games in Serious Contexts @cooperSoftwareEngineeringGames2023
+	
 == Diese Arbeit: Aufbau einer Beispiel-Challenge
 
 In dieser Arbeit wird eine Beispiel-Challenge aufgebaut
 
 === Anforderungen an eine Challenge
-- On the Requirements for Serious Games geared towards Software Developers in the Industry @espinha_gasiba_requirements_2019
+- On the Requirements for Serious Games geared towards Software Developers in the Industry @espinhagasibaRequirementsSeriousGames2019
 
 === Evaluation
 - Erfüllungsgrad der Anforderungen

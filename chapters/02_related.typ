@@ -50,7 +50,7 @@ An der Spitze der Taxonomie steht die Fähigkeit
 angeeignete Elemente zusammenzufügen,
 um Neues zu erschaffen.
 //
-@anderson_taxonomy_2001
+@andersonTaxonomyLearningTeaching2001
 
 #figure(
   muchpdf(
@@ -63,7 +63,7 @@ um Neues zu erschaffen.
   Die Spitze der Üyramide bildet die Stufe 'create'.
   "
   ),
-  caption: [Blooms Pyramide, nach @anderson_taxonomy_2001. Eigene Darstellung],
+  caption: [Blooms Pyramide, nach @andersonTaxonomyLearningTeaching2001. Eigene Darstellung],
   
 ) <pyramide>
 
@@ -123,12 +123,12 @@ auch unter geänderten Rahmenbedingungen.
 Das tiefste Verständnis ist nach der Interaktion zu erwarten,
 potentiell können
 neue Produkte, Interpretationen und Ideen entstehen.
-@chi_icap_2014
+@chiICAPFrameworkLinking2014
 
 
 /*
 TODO: (?) Vergleich ICAP <> Bloom?
-wie in @chi_icap_2014 ?
+wie in @chiICAPFrameworkLinking2014 ?
 Wenn ja, dann auf jeden Fall Hinweis, dass Zuordnungen natürlich nicht immer 100% trennscharf sind!
 */
 
@@ -151,7 +151,7 @@ ist die
 möglichst aktive
 Beschäftigung mit dem Lerngegenstand
 durch die Lernenden selbst.
-@eckstein_patterns_2002
+@ecksteinPatternsActiveLearning2002
 //
 Wenn
 Jura-Studierende Gerichtsurteile aufarbeiten,
@@ -160,7 +160,7 @@ und
 angehende Mediziner:innen
 anhand der Begutachtung von Leichen
 die Todesursache ermitteln
-@eckstein_patterns_2002,
+@ecksteinPatternsActiveLearning2002,
 wie können
 Programmierer:innen // TODO: Gender einheitlich
 sich
@@ -254,7 +254,7 @@ werden diese entwickelt,
 um über reale Themen wie
 Gesundheitsfürsorge, Sicherheit oder Umweltfragen
 aufzuklären, zu schulen oder zu informieren.
-@cooper_software_2023
+@cooperSoftwareEngineeringGames2023
 //
 Wenn
 Serious Games
@@ -278,7 +278,7 @@ stellen
 Spieler
 sich
 realistischen Herausforderungen.
-@cooper_designing_2023
+@costaDesigningSeriousGame2023
 
 Werden auf diese Art IT-Security Techniken vermittelt,
 findet dies üblicherweise im Rahmen von
@@ -293,7 +293,7 @@ Aufgaben ("challenges"),
 beispielsweise im "Jeopardy-style",
 bei dem es für gelöste
 Aufgaben in unterschiedlichen Kategorien Punkte zu gewinnen gibt.
-@noauthor_ctftimeorg_nodate
+@ctfTimeOrgCtfWtf
 //
 Aufgaben in der Kategorie "Web"
 beispielsweise
@@ -318,7 +318,7 @@ Teilnehmende
 großes Interesse
 am wettbewerbsorientierten Lernen
 zeigen
-@computer_science_department_texas_tech_university_teaching_2016
+@siaminaminTeachingCyberSecurity2016
 und
 "capture the flag"-Aufgaben
 die Interaktion von Lernenden
@@ -328,7 +328,7 @@ was zu besser entwickelten
 Fähigkeiten
 im Umgang mit Sicherheitslücken
 führt
-@leune_using_2017.
+@leuneUsingCapturetheFlagEnhance2017.
 
 Capture the Flag
 als
@@ -373,5 +373,5 @@ Forschung
 15 Anforderungen
 #footnote[Die Anforderungen werden gemeinsam mit der folgenden Evaluation in @tabEvaluation aufgelistet.]
 definiert.
-@espinha_gasiba_requirements_2019
+@espinhagasibaRequirementsSeriousGames2019
 
