@@ -2,14 +2,25 @@
 
 = Interaktive Lernumgebung
 
-Basierend auf dem ICAP-Ansatz
-wird im Folgenden eine interaktive Lernumgebung 
+Im Folgenden
+wird
+eine Lernumgebung
 aufgebaut,
-mit dem Ziel
-Lernende
-für ein definiertes IT-Sicherheitsproblem
-zu sensibilisieren
-und ihnen zu ermöglichen,
+die die Interaktion
+mit einer
+ausgewählten
+weit verbreiteten
+Schwachstelle 
+ermöglicht.
+//
+In diesem
+serious game
+ist eine
+bewusst platzierte
+Schwachstelle auszunutzen,
+was
+ein tiefes Verständnis für die Problematik fördert,
+und ermöglicht
 ähnliche
 Sicherheitslücken
 künftig
@@ -17,31 +28,58 @@ zu erkennen
 und
 zu bewerten.
 
-
 == Lernziel ("learning goal objective")
 
-=== Übergeordnet
+=== Broken Access Control
 
-Broken Access Control
-- Top 1 der aktuellen OWASP #[#set text(lang: "en");"Top 10 Web Application Security Risks"].
+Auf
+Platz 1
+der aktuellen
+OWASP #[#set text(lang: "en");"Top 10 Web Application Security Risks"]
+@OWASPTopTen2021
+befindet sich
+die Sammelkategorie
+"Broken Access Control"
+@A01:2021.
 
-=== Konkret
+Die Schwachstellen sind in einer CEW-Liste
+gesammelt. @CWEList4.16
 
-Direkter Zugriff
-- Direkte Anfrage nach Ressourcen, die aus der GUI nicht erreichbar wären #link("https://cwe.mitre.org/data/definitions/425.html")[CWE-425]
-- Auslesen von Meta-Daten, trotz fehlender Zugriffsberechtigungen #link("https://cwe.mitre.org/data/definitions/200.html")[CWE-200]
 
-Rechte-Ausweitung
-- Rechte-Ausweitung (innerhalb der Anwendung)
-	- ermöglicht durch fehlende Authorisationsprüfung #link("https://cwe.mitre.org/data/definitions/862.html")[CWE-862]
-- Rechte-Ausweitung (innerhalb der Plattform)
-	- Initial-Modus, aktiviert, wenn keine Anwender registriert sind.
-	  Der erste registrierte Account wird dann mit Administrationsrechten ausgestattet.
-	  Der Zugriff zu diesem initial-Modus ist nicht eingeschränkt #link("https://cwe.mitre.org/data/definitions/1188.html")[CWE-1188].
-	- In Kombination mit einem unsicheren Anwender-Verwaltungs-Endpunkt, der es ohne Autorisation #link("https://cwe.mitre.org/data/definitions/306.html")[CWE-306] erlaubt Anwender zu löschen, kann ein Angreifer alle bestehenden Anwender, inklusive des bestehenden Administrations-Anwenders, löschen, um anschließend einen neuen Account anzulegen. Diesem wird nun von der Anwendung Administrationsrechte zugesprochen.
+==== Auslesen von Meta-Daten trotz gfehlender Zugriffsberechtigung
+
+Direkte Anfrage nach Ressourcen, die aus der GUI nicht erreichbar wären.
+@CWE425
+
+Auslesen von Meta-Daten, trotz fehlender Zugriffsberechtigungen. @CWE200
+
+==== Rechteausweitung
+
+Rechte-Ausweitung (innerhalb der Anwendung):
+//
+ermöglicht durch fehlende Authorisationsprüfung. @CWE862
+
+Rechte-Ausweitung (innerhalb der Plattform):
+//
+Initial-Modus, aktiviert, wenn keine Anwender registriert sind.
+//
+Der erste registrierte Account wird dann mit Administrationsrechten ausgestattet.
+//
+Der Zugriff zu diesem initial-Modus ist nicht eingeschränkt. @CWE1188
+//
+
+In Kombination mit einem unsicheren Anwender-Verwaltungs-Endpunkt,
+der es
+ohne Autorisation @CWE306
+erlaubt Anwender zu löschen,
+kann ein Angreifer alle bestehenden Anwender,
+inklusive des bestehenden Administrations-Anwenders,
+löschen,
+um anschließend einen neuen Account anzulegen.
+//
+Diesem wird nun von der Anwendung Administrationsrechte zugesprochen.
 
 == Storyline der Challenge
-
 
 
 === Aus Sicht des Programmierers
@@ -140,4 +178,3 @@ Hamburger CTF-Team Cyclopropenylidene (C3H2)
 				- 10/12 "auf jeden Fall"
 				- 2/12 "eher ja"
 	- Es hat keine inhaltliche Evaluation stattgefunden
-		
