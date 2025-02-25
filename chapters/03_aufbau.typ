@@ -1,3 +1,5 @@
+#import "../dependencies.typ": *
+
 = Interaktive Lernumgebung
 
 Basierend auf dem ICAP-Ansatz

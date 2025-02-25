@@ -1,3 +1,5 @@
+#import "../dependencies.typ": *
+
 #let moore = csv("evaluation.csv", delimiter: ";")
 
 #context [
