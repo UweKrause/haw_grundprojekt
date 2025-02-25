@@ -1,6 +1,23 @@
-= Aufbau der Challenge
+= Interaktive Lernumgebung
+
+Basierend auf dem ICAP-Ansatz
+wird im Folgenden eine interaktive Lernumgebung 
+aufgebaut,
+mit dem Ziel
+Lernende
+für ein definiertes IT-Sicherheitsproblem
+zu sensibilisieren
+und ihnen zu ermöglichen,
+ähnliche
+Sicherheitslücken
+künftig
+zu erkennen
+und
+zu bewerten.
+
 
 == Lernziel ("learning goal objective")
+
 === Übergeordnet
 
 Broken Access Control

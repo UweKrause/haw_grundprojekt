@@ -12,7 +12,6 @@
 - (nicht Pentester ausbilden)
 
 == Didaktische Basis
-- Active Learning @eckstein_patterns_2002
 - Blooms (revisited) Taxonomy @anderson_taxonomy_2001
 - ICAP (Interactive - Constructive - Active - Passive) @chi_icap_2014
 
