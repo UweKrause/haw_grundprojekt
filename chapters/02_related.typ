@@ -64,7 +64,6 @@ um Neues zu erschaffen.
   "
   ),
   caption: [Blooms Pyramide, nach @andersonTaxonomyLearningTeaching2001. Eigene Darstellung],
-  
 ) <pyramide>
 
 == ICAP (Interactive - Constructive - Active - Passive)

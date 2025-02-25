@@ -7,28 +7,102 @@ wird
 eine Lernumgebung
 aufgebaut,
 die die Interaktion
-mit einer
-ausgewählten
-weit verbreiteten
-Schwachstelle 
+mit einem
+weit verbreitetem
+und für
+Programmierer:innen
+direkt
+relevanten
+IT-Sicherheitsproblem
 ermöglicht.
 //
 In diesem
 serious game
-ist eine
+besteht die Aufgabe darin
+eine
 bewusst platzierte
 Schwachstelle auszunutzen,
 was
-ein tiefes Verständnis für die Problematik fördert,
-und ermöglicht
-ähnliche
-Sicherheitslücken
-künftig
-zu erkennen
-und
-zu bewerten.
+ein tiefes Verständnis
+für die Problematik
+fördern soll.
 
-== Lernziel ("learning goal objective")
+
+== Lernziele
+
+// Remember
+Teilnehmer:innen
+sollen
+diese
+Sicherheitslücken
+zukünftig
+kennen.
+//
+// Understand
+Sie sollen
+verstanden haben,
+dass
+es Konsequenzen haben
+wird,
+wenn
+eine Angreifer:in
+diese Lücke
+ausnutzt.
+//
+// Apply
+Eigener Code sollte
+zukünftig
+frei von
+diesem Problem
+sein.
+//
+// Analyze
+Sie sollen
+in der Lage sein
+eigenen oder fremden
+Code
+daraufhin
+zu analysieren
+ob er
+diese oder eine ähnliche Sicherheitslücke
+enthält.
+//
+// Evaluate
+Sie
+sollten
+bewerten,
+ob
+verwundbarer Code
+ausgenutzt werden kann.
+//
+// Create
+In einer
+etwaigen
+Diskussion
+sollen sie ihr Gegenüber
+davon überzeugen können,
+dass
+diese Lücke
+entfernt werden
+muss.
+
+#figure(
+  muchpdf(
+  read("../figures/bloomsPyramideLernzieleSicherheitsluecke.pdf", encoding: none),
+  width: 80%,
+  alt: "Erneute pramidenförmige Darstellung der Stufen von Blooms Taxonomie.
+  Diesmal ergänzt durch die Lernziele,
+  die Sicherheitslücke zu kennen und
+  ein Problembewusstsein zu haben.
+  Diesen Fehler nicht in eigenem Code zu machen
+  und ihn in eigenem oder fremden Code zu finden.
+  Eine vorhandene Lücke auf Mißbrauchrisiko bewerten
+  und im Zweifelsfall jemanden davon zu überzeugen,
+  das Problem zu beseitigen."
+  ),
+  caption: [Lernziele in Relation zu Blooms Pyramide, nach @andersonTaxonomyLearningTeaching2001. Eigene Darstellung],
+) <pyramideLernziele>
+
 
 === Broken Access Control
 
