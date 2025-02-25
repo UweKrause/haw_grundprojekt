@@ -371,36 +371,13 @@ akademischer
 und industrieller
 Forschung
 15 Anforderungen
+#footnote[Die Anforderungen werden gemeinsam mit der folgenden Evaluation in @tabEvaluation aufgelistet.]
 für 
-Serious Games definiert,
+Serious Games
 die sich an
 praktizierende
 Software-Entwickelnde richten
+definiert
 @espinha_gasiba_requirements_2019
 .
 
-
-
-/* TODO: streichen
-Wird später ausführlich in Tabelleaufgelsitet.
-(ggf. Hinweis auf vollständige Auflistung in Tabelle X?
-(Fließtext oder Fußnote?))
-*/
-#[
-  #set text(lang: "en")
-  1. "Have a clearly defined learning goal objective"
-  2. "Adapted to background (job description) of participants developers"
-  3. "Well defined working mechanics (e.g. which tools to use or what to do)"
-  4. "Defined and progressive level of difficulty challenges"
-  5. "Elicit discussions of the solutions (e.g. is there a better/simpler way to solve?)"
-  6. "Provide possible solution after challenge solved"
-  7. "Adapted to the skill level of participants"
-  8. "Challenge includes hint that aid to arrive to the solution"
-  9. "Clear, standardized and simple solution (not based on obscure knowledge)"
-  10. "Planned duration of the exercise"
-  11. "Explains issues arriving from interplay of different technologies or components"
-  12. "Adapted to company internal secure coding guidelines and policies"
-  13. "Challenges are put from the defensive perspective"
-  14. "Solutions does not require specific knowledge of hacking tools"
-  15. "Challenges should raise awareness on possible consequences of malicious attack"
-]

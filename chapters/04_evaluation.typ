@@ -11,11 +11,11 @@ Direkter Vergleich des Ergbenis der
 EIGENEN Challenge
 mit den Challenges aus dem Requirements-Paper @espinha_gasiba_requirements_2019
 
-#show figure: set block(breakable: true)
 #figure(
   include("04_evaluation_table.typ"),
-  caption: [Evaluationsergebnis]
-)  
+  caption: [Evaluationsergebnis],
+  kind: table,
+) <tabEvaluation>
 
 - Ergebnis (hoffentlich): meine Challenge erfüllt die Anforderungen besser
 
