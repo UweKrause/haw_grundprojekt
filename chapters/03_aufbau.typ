@@ -106,21 +106,155 @@ muss.
 
 === Broken Access Control
 
+Schwachstellen
+werden
+von der
+MITRE-Organisation
+in einer
+"Common Weakness Enumeration"-Liste (CWE)
+gesammelt.
+@CWEList4.16
+//
+In den
+OWASP "Top 10 Web Application Security Risks"
+werden Sicherheitslücken
+kategorisiert
+und
+diese
+Kategorien
+werden
+wiederum
+nach
+Inzidenzrate
+geordnet.
+@OWASPTopTen2021_de
+//
 Auf
 Platz 1
-der aktuellen
-OWASP #[#set text(lang: "en");"Top 10 Web Application Security Risks"]
-@OWASPTopTen2021
-befindet sich
-die Sammelkategorie
-"Broken Access Control"
-@A01:2021.
+der schwerwiegendsten Sicherheitsrisiken
+im Betrachtungszeitraum
+#footnote[Die nächste Ausgabe der "Top 10 Web Application Security Risks" wurde für "die erste Jahreshälfte 2025" angekündigt. @OWASPTopTen2021]
+2017 -- 2021
+befinden
+sich Fehler
+der Kategorie
+"Mangelhafte Zugriffskontrolle".
+//
+Zugriffskontrollen bezeichnet
+Mechanismen
+die sicherstellen,
+dass
+Nutzer:innen
+nur innerhalb ihrer vorgesehenen Berechtigungen handeln können.
+//
+Werden diese Zugriffskontrollen mangelhaft implementiert,
+kann eine erfolgreiche Ausnutzung
+dazu führen,
+dass eine
+Angreifer:in
+Daten unbefugt
+lesen, ändern oder zerstören
+kann
+oder eine Anwendung dazu bringen kann,
+Dinge zu tun,
+die die Nutzer:in nicht können sollte.
+//
+@A01:2021_de
 
-Die Schwachstellen sind in einer CEW-Liste
-gesammelt. @CWEList4.16
 
+== Szenario
 
-==== Auslesen von Meta-Daten trotz gfehlender Zugriffsberechtigung
+Die Entstehung der Umgebung soll
+wenigstens grob
+der Entstehung einer realen Anwendung folgen.
+//
+In der anzugreifenden Umgebung soll sich eine
+fiktive Anwendung befinden,
+die an und für sich korrekt funktioniert,
+aber
+unter Ausnutzung der Sicherheitslücken
+zu einem
+(aus Sicht einer fiktiven Organisation)
+fehlerhaften Verhalten gebracht werden kann.
+
+Für dieses Szenario wird von einer
+Entwickler:in ausgegangen,
+die eine
+Kommuikationsplattform betreiben möchte.
+//
+Angelehnt an die bestehenden Plattform "Reddit",
+bei der sich
+Nutzer:innen
+zu vielen verschiedenen Themen öffentlich austauschen können,
+soll die neue Plattform
+einen themenbezogenen Austausch
+in
+vertraulichen
+Kleingruppen
+ermöglichen.
+//
+Diese Kleingruppen sind im Gegensatz zu Reddit
+nicht öffentlich,
+sondern können
+nur auf Einladung
+eines Mitglieds
+betreten werden.
+
+=== Glesn
+
+Die Entwickler:in
+kreiert die Konkurrenzplattform
+"Glesn"//
+#footnote[Bayrisch, vulg. für "gelesen", Anspielung auf "reddit", was selbst durch ein Wortspiel mit "I read it on reddit." entstanden ist @faqReddit2006.],
+//
+welche
+Anwender:innen
+verspricht,
+sich innerhalb eines geschützten "Space" mit Anderen austauschen zu können.
+//
+Innerhalb der Spaces können
+Anwender:innen
+"Artikel" schreiben,
+die von Anderen nur gelesen werden können,
+wenn diese selbst Teil des Space sind,
+in dem der Artikel
+veröffentlicht
+wurde.
+
+/*
+TODO:
+Architektur 
+- Relationsmodell
+	- User - Spaces - Artikel
+- kurze Beschreibung Django
+	- inklusive Besonderheit Django Admin
+*/
+
+Das initiale Setup der Anwendung ist einfach:
+//
+Da die Anwendung beim ersten
+Deployment noch keine Anwender hat,
+kann der erste Account
+--~den ja wahrscheinlich die Entwickler:in anlegen wird~--
+Administrationsrechte
+//auf der Django-Datenbank
+erhalten.
+//
+Mit diesem Account können nun
+erste
+Spaces
+und Artikel
+angelegt
+werden
+und die Plattform
+kann
+für weitere Anwender:innen
+freigegeben
+werden.
+
+=== Sicherheitslücken in der Anwendung
+
+==== Auslesen von Meta-Daten trotz fehlender Zugriffsberechtigung
 
 Direkte Anfrage nach Ressourcen, die aus der GUI nicht erreichbar wären.
 @CWE425
@@ -152,33 +286,6 @@ löschen,
 um anschließend einen neuen Account anzulegen.
 //
 Diesem wird nun von der Anwendung Administrationsrechte zugesprochen.
-
-== Storyline der Challenge
-
-
-=== Aus Sicht des Programmierers
-
-- Reddit ist erfolgreich
-	- Kritik: zu offen, alles für alle lesbar, Leute mischen sich ein
-
-Also:
-Schaffen einer privaten Austauschplattform "Glesn".
-- Hauptkonzept: "Spaces"
-	- Themenbezogene Erfahrungs-Austausch-Kreise
-	- Zutritt nur auf Einladung (#[#set text(lang: "en");"invite only"])
-
-Architektur 
-- Relationsmodell
-	- User - Spaces - Artikel
-- kurze Beschreibung Django
-	- inklusive Besonderheit Django Admin
-
-=== Aus Sicht des Betreibers
-
-- Einfaches initiales Setup 
-	- Anmeldung: Erster Account hat Admin-Rechte
-- Anlegen erster Spaces und Artikel
-- Freigabe der Plattform für Anwender
 
 == Angedachter Lösungsweg der Challenge
 
