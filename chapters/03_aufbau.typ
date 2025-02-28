@@ -252,16 +252,149 @@ für weitere Anwender:innen
 freigegeben
 werden.
 
-=== Sicherheitslücken in der Anwendung
 
-==== Auslesen von Meta-Daten trotz fehlender Zugriffsberechtigung
+=== Aufbau der Anwendung
 
-Direkte Anfrage nach Ressourcen, die aus der GUI nicht erreichbar wären.
+Das User-Interface der Website
+besteht aus einer Kopf-Bereich
+und einem Bereich für den anzuzeigenden Inhalt.
+//
+Der Kopfbereich ist aufgeteilt in
+einen Unter-Bereich für die Account-Verwaltung
+und
+einen Unter-Bereich für die Navigation.
+//
+Anwender:innen können auf der Seite einen Account anlegen,
+in dem die Berechtigungen (Zugehörigkeit zu Spaces) hinterlegt sind.
+
+Eine Einstiegsseite erklärt das Prinzip der Seite,
+also
+dass Anwender:innen
+innerhalb geschützter Spaces
+Artikel anlegen können
+und
+dass andere Anwender:innen diese Artikel nur lesen können,
+wenn sie zuvor von einer Person innerhalb des Space zu diesem eingeladen wurden.
+
+Über die Navigation kann
+jeweils
+eine Übersicht aller
+für den verwendeten Account sichtbaren
+Spaces und Artikel
+aufgerufen werden.
+
+Die Artikel bestehen aus
+einer Überschrift,
+der Information, welche Autor:in den Artikel verfasst hat,
+welchen Spaces der Artikel zugewiesen ist
+und dem eigentlichem Inhalt des Artikels.
+
+/*
+ATTENTION: TODO:
+Die App zeigt Artikelüberschriften an.
+Entweder Text anopassen oder App.
+Zeigt die App die Überschriften nicht an ist Enumerieren über die Meta-Daten "schlimmer" (info leak).
+Zeigt die App die Überschriften an, ist das ein leichterer Tipp für Teilnehmer.
+*/
+
+#figure(
+	image("../figures/screenshotArticle2_fade.png", width: 80%),
+	caption: [Screenshot der Website. In einem öffentlich einsehbareren Artikel wird das Funktionsprinzip erklärt.]
+) <screenshotArticle2>
+
+Zu einzelnen
+Autor:innen
+kann eine Übersicht ihrer
+Artikel aufgerufen werden.
+//
+Für angemeldete
+Anwender:innen besteht außerdem die Möglichkeit,
+die ausgewählte
+andere Person
+zu einem der Spaces einzuladen.
+
+#figure(
+	image("../figures/screenshotUser12.png", width: 80%),
+	caption: [Screenshot der Website mit Auflistung der von einer Person verfassten Artikel. Die Person kann zu einem Space eingeladen werden.]
+) <screenshotUser12>
+
+
+== Sicherheitslücken in der Anwendung
+
+// TODO: Einführung?
+
+=== Auslesen von Meta-Daten trotz fehlender Zugriffsberechtigung
+
+Programmierer:innen
+von Web-Anwendungen
+unterliegen
+häufig der falschen Annahme,
+dass
+die Bedienung
+nur mit den
+von der Anwendung selbst bereitgestellten
+Mitteln
+möglich ist.
 @CWE425
+//
+Im Beispiel der Glesn-Anwendung
+werden sowohl
+in der Spaces-,
+als auch in der Artikel-Übersicht
+nur
+Links zu
+Ressourcen-Übersichten
+aufgelistet,
+auf die die Anwender:in Zugriff hat.
+//
+Die vergebenen
+Berechtigungen
+(Zugehörigkeit zum Space)
+wird an dieser Stelle respektiert.
+//
+Über eine direkte Anfrage
+ist
+jedoch
+der Zugriff auf
+die
+Ressourcen-Übersichtsseite
+möglich,
+die mit den Links
+aus der GUI nicht erreichbar wären.
+//
+Wird
+in der Glesn-Anwendung
+eine Artikel-Ansicht
+direkt aufgerufen,
+wird auch auf der Übersichtsseite noch einmal die Berechtigung überprüft.
+//
+Der Inhalt des Artikels
+bleibt also trotzdem geschützt.
 
-Auslesen von Meta-Daten, trotz fehlender Zugriffsberechtigungen. @CWE200
+Auch wenn der Artikel-Inhalt nicht angezeigt wird,
+zeigt die Übersichts-Seite Meta-Daten
+über den Artikel an.
+//
+Angezeigt werden
+die Spaces, denen dieser Eintrag zugewiesen ist
+und
+die Autor:in des Artikels.
+//
+Da
+die Personen-Übersicht
+nur Artikel anzeigt,
+zu denen
+eine Anwender:in Zugriff hat,
+sich jedoch über den genannten Umweg
+trotzdem
+zumindest alle Artikel-Überschriften
+zu Autor:innen zuweisen lassen,
+ist dies als
+unbeabsichtigtes Informationsleck @CWE200
+zu betrachten.
 
-==== Rechteausweitung
+
+=== Rechteausweitung
 
 Rechte-Ausweitung (innerhalb der Anwendung):
 //
