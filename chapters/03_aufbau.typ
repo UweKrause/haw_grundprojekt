@@ -90,13 +90,13 @@ muss.
   muchpdf(
   read("../figures/bloomsPyramideLernzieleSicherheitsluecke.pdf", encoding: none),
   width: 80%,
-  alt: "Erneute pramidenförmige Darstellung der Stufen von Blooms Taxonomie.
+  alt: "Erneute pyramidenförmige Darstellung der Stufen von Blooms Taxonomie.
   Diesmal ergänzt durch die Lernziele,
   die Sicherheitslücke zu kennen und
   ein Problembewusstsein zu haben.
   Diesen Fehler nicht in eigenem Code zu machen
   und ihn in eigenem oder fremden Code zu finden.
-  Eine vorhandene Lücke auf Mißbrauchrisiko bewerten
+  Eine vorhandene Lücke auf Missbrauchsrisiko bewerten
   und im Zweifelsfall jemanden davon zu überzeugen,
   das Problem zu beseitigen."
   ),
@@ -158,7 +158,6 @@ kann
 oder eine Anwendung dazu bringen kann,
 Dinge zu tun,
 die die Nutzer:in nicht können sollte.
-//
 @A01:2021_de
 
 
@@ -180,7 +179,7 @@ fehlerhaften Verhalten gebracht werden kann.
 Für dieses Szenario wird von einer
 Entwickler:in ausgegangen,
 die eine
-Kommuikationsplattform betreiben möchte.
+Kommunikationsplattform betreiben möchte.
 //
 Angelehnt an die bestehenden Plattform "Reddit",
 bei der sich
@@ -199,6 +198,7 @@ sondern können
 nur auf Einladung
 eines Mitglieds
 betreten werden.
+
 
 === Glesn
 
@@ -223,7 +223,7 @@ wurde.
 
 /*
 TODO:
-Architektur 
+Architektur
 - Relationsmodell
 	- User - Spaces - Artikel
 - kurze Beschreibung Django
@@ -420,6 +420,7 @@ um anschließend einen neuen Account anzulegen.
 //
 Diesem wird nun von der Anwendung Administrationsrechte zugesprochen.
 
+
 == Angedachter Lösungsweg der Challenge
 
 Ausnutzen der platzierten Schwachstellen innerhalb der Anwendung
@@ -432,6 +433,7 @@ Ausnutzen des initialen Setup-Modus
 - Im Initialen Modus neuen Account
 - mit diesem in die Administartions-Datenbank
 
+
 === Tipps und Hinweise für Lösungsweg
 
 - Der erste Beitrag, der sichtbar ist, hat die ID 2
@@ -439,6 +441,7 @@ Ausnutzen des initialen Setup-Modus
 
 - Der erste Beitrag (ID 1) ist eine vom (simulierten Admin) angelegte Notiz an andere Admins
 	- Der Admin drückt Freude darüber aus, wie einfach das initiale Setup dadurch war, dass das System einfach dem ersten User-Account Administrationsrechte gibt.
+
 
 == Realitätsbezug
 
@@ -452,10 +455,11 @@ Ausnutzen des initialen Setup-Modus
 
 TODO: da werden sich schon noch Beispiele finden lassen
 
+
 == Beta-Test
 
 
-Hamburger CTF-Team Cyclopropenylidene (C3H2) 
+Hamburger CTF-Team Cyclopropenylidene (C3H2)
 
 - Feedback: ID für ersten sichtbaren Artikel sollte 2 sein, als Hinweis darauf, dass es einen weiteren Artikel (ID 1) gibt.
 	- -> so umgesetzt
