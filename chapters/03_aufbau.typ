@@ -417,8 +417,89 @@ kann ein Angreifer alle bestehenden Anwender,
 inklusive des bestehenden Administrations-Anwenders,
 löschen,
 um anschließend einen neuen Account anzulegen.
+
+Wie beschrieben
+bietet die Anwendung die Möglichkeit,
+andere Benutzer:innen
+zu Spaces einzuladen.
 //
-Diesem wird nun von der Anwendung Administrationsrechte zugesprochen.
+Durch
+eine erste Berechtigungsprüfung
+sind
+in der grafischen Oberfläche
+in einer Auswahl-Liste
+für die Anwender:in
+nur
+die Spaces zum Einladen verfügbar,
+zu denen
+Zugriff
+besteht.
+//
+Eine
+Angreifer:in
+kann die Oberfläche jedoch umgehen
+und
+beim Web-Server direkt
+eine Einladung
+anfragen.
+//
+Wieder
+wird die Annahme ausgenutzt,
+dass die vom Web-Server angebotenen Endpunkte
+ausschließlich wie von der Entwickler:in vorgesehen
+benutzt werden
+@CWE425.
+//
+In der Beispiel-Anwendung
+wurde davon ausgegangen,
+dass
+der Endpunkt
+durch
+die erste Berechtigungsprüfung
+bereits geschützt ist.
+//
+In diesem Szenario wird deshalb fehlendes Bewusstsein unterstellt,
+dass vor dem erfolgreichen Aussprechen einer Einladung zu einem Space
+überprüft werden muss,
+ob die einladende Person überhaupt selbst
+über
+die
+notwendige
+Berechtigung
+verfügt.
+
+Durch die
+fehlende
+Autorisationsprüfung
+werden mehrere
+Schutzziele
+der Anwendung
+gefährdet:
+//
+Einer
+Angreifer:in
+ist möglich,
+eine
+privilegierte Funktion aufzurufen,
+die Daten in ihrem Sinne verändert
+und ihr auf diese Weise Zugriff
+auf
+geschützte Informationen
+liefert.
+//
+Durch
+Verletzung
+der
+Integrität
+werden
+Zugriffskontrollen
+umgangen
+und
+die Vertraulichkeit
+der Anwendung
+verletzt.
+@CWE862
+
 
 
 == Angedachter Lösungsweg der Challenge
