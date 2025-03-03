@@ -230,27 +230,27 @@ Architektur
 	- inklusive Besonderheit Django Admin
 */
 
-Das initiale Setup der Anwendung ist einfach:
-//
-Da die Anwendung beim ersten
-Deployment noch keine Anwender hat,
-kann der erste Account
---~den ja wahrscheinlich die Entwickler:in anlegen wird~--
-Administrationsrechte
-//auf der Django-Datenbank
-erhalten.
-//
-Mit diesem Account können nun
-erste
-Spaces
-und Artikel
-angelegt
-werden
-und die Plattform
-kann
-für weitere Anwender:innen
-freigegeben
-werden.
+// Das initiale Setup der Anwendung ist einfach:
+// //
+// Da die Anwendung beim ersten
+// Deployment noch keine Anwender hat,
+// kann der erste Account
+// --~den ja wahrscheinlich die Entwickler:in anlegen wird~--
+// Administrationsrechte
+// //auf der Django-Datenbank
+// erhalten.
+// //
+// Mit diesem Account können nun
+// erste
+// Spaces
+// und Artikel
+// angelegt
+// werden
+// und die Plattform
+// kann
+// für weitere Anwender:innen
+// freigegeben
+// werden.
 
 
 === Aufbau der Anwendung
@@ -398,27 +398,15 @@ zu betrachten.
 
 === Rechteausweitung
 
-Rechte-Ausweitung (innerhalb der Anwendung):
-//
-ermöglicht durch fehlende Authorisationsprüfung. @CWE862
-
-Rechte-Ausweitung (innerhalb der Plattform):
-//
-Initial-Modus, aktiviert, wenn keine Anwender registriert sind.
-//
-Der erste registrierte Account wird dann mit Administrationsrechten ausgestattet.
-//
-Der Zugriff zu diesem initial-Modus ist nicht eingeschränkt. @CWE1188
-//
-
-In Kombination mit einem unsicheren Anwender-Verwaltungs-Endpunkt,
-der es
-ohne Autorisation @CWE306
-erlaubt Anwender zu löschen,
-kann ein Angreifer alle bestehenden Anwender,
-inklusive des bestehenden Administrations-Anwenders,
-löschen,
-um anschließend einen neuen Account anzulegen.
+// Die Anwendung bietet gleich zwei Möglichkeiten der Rechte-Ausweitung:
+// //
+// Innerhalb der Anwendung kann sich Zugriff auf geschützte Spaces erschlichen werden
+// und
+// durch Löschen aller Accounts kann die Anwendung in den initial-Modus versetzt werden,
+// was dazu führt
+// einer Angreifer:in
+// Vollzugriff
+// zu geben.
 
 Wie beschrieben
 bietet die Anwendung die Möglichkeit,
@@ -502,6 +490,24 @@ der Anwendung
 verletzt.
 @CWE862
 
+// Rechte-Ausweitung (innerhalb der Plattform):
+// //
+// Initial-Modus, aktiviert, wenn keine Anwender registriert sind.
+// //
+// Der erste registrierte Account wird dann mit Administrationsrechten ausgestattet.
+// //
+// Der Zugriff zu diesem initial-Modus ist nicht eingeschränkt. @CWE1188
+// //
+// In Kombination mit einem unsicheren Anwender-Verwaltungs-Endpunkt,
+// der es
+// ohne Autorisation @CWE306
+// erlaubt Anwender zu löschen,
+// kann ein Angreifer alle bestehenden Anwender,
+// inklusive des bestehenden Administrations-Anwenders,
+// löschen,
+// um anschließend einen neuen Account anzulegen.
+// //
+// Diesem wird nun von der Anwendung Administrationsrechte zugesprochen.
 
 
 == Angedachter Lösungsweg der Challenge
@@ -511,10 +517,10 @@ Ausnutzen der platzierten Schwachstellen innerhalb der Anwendung
 - Auslesen der Meta-Daten (Spaces & Space-ID, Autoren und Autoren-ID)
 - Rechte-Ausweitung innerhalb der Anwendung durch selbst-hinzufügen zu Administrator-Space, an der GUI vorbei, ermöglicht durch fehlende Autorisationsprüfung
 
-Ausnutzen des initialen Setup-Modus
-- Löschen aller Anwender
-- Im Initialen Modus neuen Account
-- mit diesem in die Administartions-Datenbank
+// Ausnutzen des initialen Setup-Modus
+// - Löschen aller Anwender
+// - Im Initialen Modus neuen Account
+// - mit diesem in die Administartions-Datenbank
 
 
 === Tipps und Hinweise für Lösungsweg
