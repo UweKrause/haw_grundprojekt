@@ -392,7 +392,8 @@ trotzdem
 zumindest alle Artikel-Überschriften
 zu Autor:innen zuweisen lassen,
 ist dies als
-unbeabsichtigtes Informationsleck @CWE200
+Informationsleck
+@CWE200
 zu betrachten.
 
 
