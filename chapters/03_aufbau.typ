@@ -355,12 +355,12 @@ wird an dieser Stelle respektiert.
 Über eine direkte Anfrage
 ist
 jedoch
-der Zugriff auf
+ein gezielter Zugriff auf
 die
 Ressourcen-Übersichtsseite
-möglich,
-die mit den Links
-aus der GUI nicht erreichbar wären.
+einer
+ausgewählten Ressource
+möglich.
 //
 Wird
 in der Glesn-Anwendung
@@ -370,10 +370,12 @@ wird auch auf der Übersichtsseite noch einmal die Berechtigung überprüft.
 //
 Der Inhalt des Artikels
 bleibt also trotzdem geschützt.
-
-Auch wenn der Artikel-Inhalt nicht angezeigt wird,
-zeigt die Übersichts-Seite Meta-Daten
-über den Artikel an.
+//
+Die Übersichts-Seite
+zeigt
+jedoch
+Meta-Daten
+über den Artikel an:
 //
 Angezeigt werden
 die Spaces, denen dieser Eintrag zugewiesen ist
