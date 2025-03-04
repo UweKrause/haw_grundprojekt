@@ -467,9 +467,9 @@ Schutzziele
 der Anwendung
 gefährdet:
 //
-Einer
+Eine
 Angreifer:in
-ist möglich,
+kann
 eine
 privilegierte Funktion aufzurufen,
 die Daten in ihrem Sinne verändert
@@ -513,10 +513,163 @@ verletzt.
 
 == Angedachter Lösungsweg der Challenge
 
-Ausnutzen der platzierten Schwachstellen innerhalb der Anwendung
-- Enumerieren der vorhandenen Artikel
-- Auslesen der Meta-Daten (Spaces & Space-ID, Autoren und Autoren-ID)
-- Rechte-Ausweitung innerhalb der Anwendung durch selbst-hinzufügen zu Administrator-Space, an der GUI vorbei, ermöglicht durch fehlende Autorisationsprüfung
+Die Challenge lässt sich
+lösen,
+indem die
+innerhalb der Anwendung
+platzierten Schwachstellen
+ausgenutzt werden.
+//
+Die Sicherheitslücken müssen
+miteinander kombiniert werden,
+um zum Ziel zu kommen.
+//
+Es sind aber
+keine
+besonderen Angriffswerkzeuge
+vonnöten,
+ein üblicher Webbrowser reicht aus.
+//
+Mit dem Werkzeug der
+"Netzwerkanalyse",
+können in modernen Browsern
+die einzelnen Aufrufe auf technischer Ebene
+protokolliert,
+eingesehen
+und
+erneut versendet
+werden.
+//
+Einige Web-Browser (z.B. Firefox)
+erlauben von hier auch
+vor dem Wiederversenden eine Manipulation der Anfrage.
+
+Als erstes wird davon ausgegangen,
+dass
+Angreifer:innen
+die Anwendung auskundschaften.
+//
+Hierbei sollte schon ohne Account
+auffallen,
+dass die
+öffentlich sichtbaren
+Spaces und Artikel
+anhand ihrer ID aufgerufen werden.
+//
+Der sichtbare Space "Public"
+hat die
+ID `2`
+und
+im Browser wird als Navigationspfad
+`/space/2/`
+angezeigt.
+//
+Der darin abgelegte Artikel hat ebenfalls die
+ID `2`
+und wird
+über
+`/article/2/`
+aufgerufen.
+//
+Die Oberfläche zeigt unter anderem auch
+einen Link zur Übersichtsseite
+der Autor:in des Artikels an,
+die
+in diesem Beispiel über
+`user/12/`
+aufgerufen werden kann.
+//
+@screenshotGETUser12 zeigt einen Ausschnitt der Netzwerkanalyse.
+
+#figure(
+	image("../figures/screenshotGETUser12.png", width: 100%),
+	caption: [Screenshot der Netzwerkanalyse: Erfolgreicher GET Aufruf auf `/user/12/`.]
+) <screenshotGETUser12>
+
+
+Durch einen direkten Aufruf der Ressourcen,
+in Kombination mit der Anzeige der unzureichend geschützten
+Meta-Daten,
+können weitere
+Spaces, Artikel und Autor:innen
+enumeriert werden.
+//
+Auf diese Weise kann
+ein Account mit dem Namen "admin"
+gefunden werden,
+ein Space
+dessen Name
+im Beispiel "!!! ADMIN ONLY !!!" lautet
+und ein Artikel
+mit der Überschrift
+"Note FOR ADMINS ONLY !!!".
+//
+Das zu erreichende Ziel
+dürfte
+deutlich sein.
+
+Nun sollte die nächste zur Verfügung stehende Funktionalität der Website verwendet werden:
+Die Registration eines neuen Accounts.
+//
+Mit diesem Account sind zwar keine zusätzlichen
+Spaces oder Artikel sichtbar,
+aber auf der Informationsseite zu anderen Autoren
+erscheint nun die Möglichkeit,
+andere Personen zu Spaces einzuladen,
+wie in @screenshotUser12 gezeigt.
+//
+Mit Hilfe der Netzwerkanalyse
+kann dem Protokoll entnommen werden,
+dass eine Einladung zu einem Space
+auf technischer Ebene
+durch ein
+`POST`-Request
+angefordert wird.
+//
+Dieser Anfrage wird als
+Argument die ID des Spaces
+über den Parameter
+```json space_id```
+übergeben,
+wie in
+@screenshotPOSTUser12Space
+dargestellt.
+
+#figure(
+	image("../figures/screenshotPOSTUser12Space.png", width: 100%),
+	caption: [Screenshot der Netzwerkanalyse: Erfolgreicher POST Aufruf auf `/user/12/` mit Argument ```json space_id: "17"```.]
+) <screenshotPOSTUser12Space>
+
+Der angedachte Lösungsweg sieht vor,
+dass
+eine Angreifer:in
+nun versuche sollte,
+die Parameter der Anfrage zu manipulieren
+und
+zu probieren,
+verschiedenen Accounts zu verschiedenen
+Spaces einzuladen.
+//
+Aufgrund der Sicherheitslücke der fehlenden
+Berechtigungsprüfung
+wird dies gelingen
+und
+die Angreifer:in
+kann sich selbst
+durch eine
+manipulierte `POST`-Anfrage
+zu dem
+Space mit der
+```json space_id: "1"```
+einladen.
+//
+Da sie nun Mitglied des Spaces ist,
+also ihre eigenen Zugriffsrechte erhöht hat,
+kann sie über die reguläre
+Benutzeroberfläche
+auch den Inhalt
+der Notiz lesen.
+
 
 // Ausnutzen des initialen Setup-Modus
 // - Löschen aller Anwender
