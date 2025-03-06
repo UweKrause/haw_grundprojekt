@@ -472,11 +472,13 @@ Angreifer:in
 kann
 eine
 privilegierte Funktion aufzurufen,
-die Daten in ihrem Sinne verändert
-und ihr auf diese Weise Zugriff
+die Daten in ihrem Sinne verändert.
+//
+Auf diese Weise erhält
+sie
+Zugriff
 auf
-geschützte Informationen
-liefert.
+geschützte Informationen.
 //
 Durch
 Verletzung
@@ -511,7 +513,7 @@ verletzt.
 // Diesem wird nun von der Anwendung Administrationsrechte zugesprochen.
 
 
-== Angedachter Lösungsweg der Challenge
+== Angedachter Lösungsweg
 
 Die Challenge lässt sich
 lösen,
@@ -558,14 +560,14 @@ anhand ihrer ID aufgerufen werden.
 //
 Der sichtbare Space "Public"
 hat die
-ID `2`
+`ID` `2`
 und
 im Browser wird als Navigationspfad
 `/space/2/`
 angezeigt.
 //
-Der darin abgelegte Artikel hat ebenfalls die
-ID `2`
+Der darin abgelegte Artikel hat die Artikel-`ID`
+`2`
 und wird
 über
 `/article/2/`
@@ -575,9 +577,10 @@ Die Oberfläche zeigt unter anderem auch
 einen Link zur Übersichtsseite
 der Autor:in des Artikels an,
 die
+sich
 in diesem Beispiel über
 `user/12/`
-aufgerufen werden kann.
+aufrufen lässt.
 //
 @screenshotGETUser12 zeigt einen Ausschnitt der Netzwerkanalyse.
 
@@ -586,27 +589,36 @@ aufgerufen werden kann.
 	caption: [Screenshot der Netzwerkanalyse: Erfolgreicher GET Aufruf auf `/user/12/`.]
 ) <screenshotGETUser12>
 
-
+Dass die ersten sichtbaren Einträge die `ID` `2` haben,
+soll
+als Hinweis verstanden werden,
+dass es unter den weiteren vorhandenen
+Spaces, Artikel und User-Accounts
+auch jeweils Objekte mit der `ID` `1` gibt,
+die von besonderem Interesse sein könnten.
+//
 Durch einen direkten Aufruf der Ressourcen,
 in Kombination mit der Anzeige der unzureichend geschützten
 Meta-Daten,
-können weitere
+können
+Informationen über
+weitere
 Spaces, Artikel und Autor:innen
 enumeriert werden.
 //
-Auf diese Weise kann
-ein Account mit dem Namen "admin"
-gefunden werden,
+So enthalten die Beispieldaten
+unter anderem
+ein Account mit dem Namen "admin",
 ein Space
 dessen Name
-im Beispiel "!!! ADMIN ONLY !!!" lautet
+"!!! ADMIN ONLY !!!" lautet
 und ein Artikel
 mit der Überschrift
 "Note FOR ADMINS ONLY !!!".
 //
-Das zu erreichende Ziel
-dürfte
-deutlich sein.
+Die sehr deutlichen Namen
+sollen wieder ein Hinweis
+auf das zu erreichende Ziel sein.
 
 Nun sollte die nächste zur Verfügung stehende Funktionalität der Website verwendet werden:
 Die Registration eines neuen Accounts.
@@ -614,9 +626,10 @@ Die Registration eines neuen Accounts.
 Mit diesem Account sind zwar keine zusätzlichen
 Spaces oder Artikel sichtbar,
 aber auf der Informationsseite zu anderen Autoren
-erscheint nun die Möglichkeit,
-andere Personen zu Spaces einzuladen,
-wie in @screenshotUser12 gezeigt.
+erscheint nun
+--~wie zuvor in @screenshotUser12 gezeigt~--
+die Möglichkeit,
+die andere Person zu Spaces einzuladen.
 //
 Mit Hilfe der Netzwerkanalyse
 kann dem Protokoll entnommen werden,
@@ -627,7 +640,7 @@ durch ein
 angefordert wird.
 //
 Dieser Anfrage wird als
-Argument die ID des Spaces
+Argument die `ID` des Spaces
 über den Parameter
 ```json space_id```
 übergeben,
@@ -668,7 +681,9 @@ also ihre eigenen Zugriffsrechte erhöht hat,
 kann sie über die reguläre
 Benutzeroberfläche
 auch den Inhalt
-der Notiz lesen.
+der
+eigentlich geschützten
+Notiz lesen.
 
 
 // Ausnutzen des initialen Setup-Modus
@@ -676,14 +691,8 @@ der Notiz lesen.
 // - Im Initialen Modus neuen Account
 // - mit diesem in die Administartions-Datenbank
 
-
-=== Tipps und Hinweise für Lösungsweg
-
-- Der erste Beitrag, der sichtbar ist, hat die ID 2
-	- Hinweis darauf, dass es einen Eintrag mit der ID 1 geben müsste.
-
-- Der erste Beitrag (ID 1) ist eine vom (simulierten Admin) angelegte Notiz an andere Admins
-	- Der Admin drückt Freude darüber aus, wie einfach das initiale Setup dadurch war, dass das System einfach dem ersten User-Account Administrationsrechte gibt.
+// - Der erste Beitrag (ID 1) ist eine vom (simulierten Admin) angelegte Notiz an andere Admins
+// 	- Der Admin drückt Freude darüber aus, wie einfach das initiale Setup dadurch war, dass das System einfach dem ersten User-Account Administrationsrechte gibt.
 
 
 == Realitätsbezug
