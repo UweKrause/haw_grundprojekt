@@ -513,7 +513,7 @@ verletzt.
 // Diesem wird nun von der Anwendung Administrationsrechte zugesprochen.
 
 
-== Angedachter Lösungsweg
+== Angedachter Lösungsweg <angedachterLösungsweg>
 
 Die Challenge lässt sich
 lösen,
@@ -710,13 +710,79 @@ Notiz lesen.
 
 == Beta-Test
 
+Während der Entwicklung der Challenge
+wurde ein Beta-Test durchgeführt,
+bei dem sich
+freundlicherweise
+mehrere Mitglieder des
+lokalen CTF-Teams
+Cyclopropenylidene (`C3H2`)
+bereit erklärt haben,
+eine Vorabversion
+der Aufgabe zu lösen.
+//
+Aus den
+gesammelten
+Rückmeldungen
+sind Zwei Punkte
+besonders nennenswert:
 
-Hamburger CTF-Team Cyclopropenylidene (C3H2)
+In einer früheren Version
+wurden
+in die
+Datenbank der
+Beispieldaten
+zunächst
+die Artikel
+eingefügt,
+dann erst der
+zu findende
+Artikel mit den versteckten
+Informationen
+//
+(siehe @angedachterLösungsweg).
+//
+Dies führte dazu,
+dass dieser
+Artikel
+eine unvorhersehbare `ID`
+wie `17` oder `19`
+hatte,
+wodurch wiederum das Ziel nicht so klar war.
+//
+Einer der Beta-Tester hat angemerkt,
+dass
+die `IDs` als eine Art Hinweis verwendet werden könnten,
+wie dann später umgesetzt.
 
-- Feedback: ID für ersten sichtbaren Artikel sollte 2 sein, als Hinweis darauf, dass es einen weiteren Artikel (ID 1) gibt.
-	- -> so umgesetzt
-- Technisches Problem aufgedeckt: Ein Beta-Tester hat nicht nur einen Account angelegt und diesem (wie angedacht) einen Account Zugriff auf den versteckten Space gegeben, sondern mit Hilfe eines http replay Proxy die Sicherheitslücke so ausgenutzt, dass alle Accounts Zugriff auf den versteckten Space hatten. das hat dafür gesorgt, dass eine Beta-Testerin, die sich zuvor einen Account angelegt hat, aber die Sicherheitslücke noch nicht gefunden hat, plötzlich ohne eigenes zutun Zugriff auf den versteckten Space hatte.
-	- -> Gelernt: Diese Challenge muss pro Person/Team als eigene Instanz bereitgestellt werden.
+Außerdem wurde
+ein
+technisches Problem aufgedeckt:
+//
+Ein Beta-Tester hat nicht nur einen Account angelegt
+und
+(wie angedacht)
+diesem Account
+Zugriff auf den versteckten Space
+gegeben,
+sondern
+mit Hilfe eines http replay Proxy
+die Sicherheitslücke
+so ausgenutzt,
+dass alle Accounts Zugriff auf den versteckten Space hatten.
+//
+Das hat dafür gesorgt,
+dass eine Beta-Testerin,
+die sich zuvor einen Account angelegt hat,
+aber die Sicherheitslücke noch nicht gefunden hat,
+plötzlich
+ohne eigenes Zutun
+Zugriff auf den versteckten Space
+hatte.
+//
+Für diese Challenge ist es also notwendig,
+dass sie pro Person/Team als eigene isolierte Instanz bereitgestellt werden
+muss.
 
 
 == Durchführung Workshop
