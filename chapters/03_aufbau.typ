@@ -787,12 +787,49 @@ muss.
 
 == Durchführung Workshop
 
-- Workshop Week an HAW September 2024
-	- ca. 12 Teilnehmende
-	- Studierende
-		- Informatik
-			- Bachelor
-			- Master
-		- Sonstige
-	- Evaluationsbögen
-  - TODO: Ergebnis der Evaluationsbügen nutzbar?? (Jedenfalls nicht für direkten Vergleich!) (Eventuell noch ein Workshop notwendig??)
+Während der sogenannten [Workshop Week]
+an der
+Hochschule für Angewandte Wissenschaften
+(HAW) Hamburg
+im September 2024
+wurden
+mit Hilfe
+diese Challenge
+in einer
+halbtägigen
+Veranstaltung
+ca. 12 Teilnehmer:innen
+in
+das Problemfeld
+der
+mangelhaften Zugriffskontrolle
+eingeführt.
+//
+// - Studierende
+// 	- Informatik
+// 		- Bachelor
+// 		- Master
+//
+Es wurde
+zwar
+keine strukturierte Evaluation
+durchgeführt,
+aber
+aus Reaktionen während der Veranstaltung
+und
+in unstrukturierten Gesprächen
+nach der Veranstaltung
+wurde ersichtlich,
+dass wenigstens
+einzelne Teilnehmer:innen
+gelernt haben,
+wie leicht
+http-Anfragen wie `GET` und `POST`
+manipuliert werden können
+und wie wichtig daher eine
+serverseitige
+Überprüfunge // todo: ?
+der Nutzereingaben
+ist.
+
+
