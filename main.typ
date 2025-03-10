@@ -36,7 +36,7 @@
 
 #include "chapters/03_aufbau.typ"
 
-#include "chapters/04_evaluation.typ"
+// #include "chapters/04_evaluation.typ"
 
 #include "chapters/05_fazit.typ"
 

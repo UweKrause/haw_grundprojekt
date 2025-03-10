@@ -23,12 +23,20 @@ ctf als Elemente aus Pentester-"Ausbildung" nutzen für Security Awareness bei P
 	
 == Diese Arbeit: Aufbau einer Beispiel-Challenge
 
-In dieser Arbeit wird eine Beispiel-Challenge aufgebaut
+In dieser Arbeit wird eine Beispiel-Challenge aufgebaut.
 
-=== Anforderungen an eine Challenge
-- On the Requirements for Serious Games geared towards Software Developers in the Industry @espinhagasibaRequirementsSeriousGames2019
+Diese wird in einem Workshop verwendet,
+um Teilnehmer:innen
+in das Problemfeld
+einer
+weit verbreiteten
+Sicherheitslücke
+einzuführen.
 
-=== Evaluation
-- Erfüllungsgrad der Anforderungen
-- Vergleich mit anderen CTF
-	- (Werte für andere CTF nicht selbst ermittelt: entommen aus Anforderungspaper)
+// === Anforderungen an eine Challenge
+// - On the Requirements for Serious Games geared towards Software Developers in the Industry @espinhagasibaRequirementsSeriousGames2019
+
+// === Evaluation
+// - Erfüllungsgrad der Anforderungen
+// - Vergleich mit anderen CTF
+// 	- (Werte für andere CTF nicht selbst ermittelt: entommen aus Anforderungspaper)

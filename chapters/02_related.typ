@@ -343,34 +343,34 @@ um Kenntnisse im Bereich IT-Sicherheit
 zu vermitteln.
 
 
-== Anforderungen an serious games
-
-Damit
-die eingesetzten Ressourcen
-möglichst optimal
-genutzt werden
-und
-der Interaktionsgegenstand
-auf
-das definierte Ziel
-einzahlt,
-müssen die
-Anforderungen
-an die Interaktionsumgebung
-klar formuliert sein.
-//
-Für 
-Serious Games
-die sich an
-praktizierende
-Software-Entwickelnde richten
-wurden
-durch Kombination
-akademischer
-und industrieller
-Forschung
-15 Anforderungen
-#footnote[Die Anforderungen werden gemeinsam mit der folgenden Evaluation in @tabEvaluation aufgelistet.]
-definiert.
-@espinhagasibaRequirementsSeriousGames2019
+// == Anforderungen an serious games
+// 
+// Damit
+// die eingesetzten Ressourcen
+// möglichst optimal
+// genutzt werden
+// und
+// der Interaktionsgegenstand
+// auf
+// das definierte Ziel
+// einzahlt,
+// müssen die
+// Anforderungen
+// an die Interaktionsumgebung
+// klar formuliert sein.
+// //
+// Für 
+// Serious Games
+// die sich an
+// praktizierende
+// Software-Entwickelnde richten
+// wurden
+// durch Kombination
+// akademischer
+// und industrieller
+// Forschung
+// 15 Anforderungen
+// #footnote[Die Anforderungen werden gemeinsam mit der folgenden Evaluation in @tabEvaluation aufgelistet.]
+// definiert.
+// @espinhagasibaRequirementsSeriousGames2019
 
