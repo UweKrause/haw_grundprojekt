@@ -8,11 +8,11 @@ TODO: Rückbezug
 -> man schaut sich Lernkonzepte an
 */
 
-Verschiedene
-didaktische Konzepte
-bekräftigen,
-dass Lernende am erfolgreichsten sind,
-wenn sie sich aktiv mit dem Lerngegenstand beschäftigen.
+// Verschiedene
+// didaktische Konzepte
+// bekräftigen,
+// dass Lernende am erfolgreichsten sind,
+// wenn sie sich aktiv mit dem Lerngegenstand beschäftigen.
 
 == Blooms Taxonomie
 
