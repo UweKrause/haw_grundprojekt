@@ -8,49 +8,73 @@ TODO: Rückbezug
 -> man schaut sich Lernkonzepte an
 */
 
-// Verschiedene
-// didaktische Konzepte
-// bekräftigen,
-// dass Lernende am erfolgreichsten sind,
-// wenn sie sich aktiv mit dem Lerngegenstand beschäftigen.
+Die
+gewünschte
+Erhöhung
+des Problembewusstseins
+entspricht letztlich
+einem
+Dazulernen
+der
+Programmierer:innen.
+//
+Verschiedene
+didaktische Konzepte
+bekräftigen,
+dass Lernende am erfolgreichsten sind,
+wenn sie sich aktiv mit dem Lerngegenstand beschäftigen.
+
 
 == Blooms Taxonomie
 
-In Blooms (überarbeiteter) Taxonomie etwa gibt es verschiedene
+Gemäß Blooms (überarbeiteter) Taxonomie
+werden
+verschiedene
 aufeinander aufbauende
-Ebenen des Verständnis,
-oft dargestellt als eine Pyramide.
+Ebenen des Verständnisses
+identifiziert.
 //
-Die Basis bildet die Verständnis-Stufe des
-"Erinnerns",
-der Fähigkeit relevantes Wissen aus dem Langzeitgedächtnis abzurufen.
+Diese werden
+oft
+wie in @pyramide
+als Pyramide
+dargestellt.
+//
+Die Basis bildet das
+"Erinnern",
+die Fähigkeit relevantes Wissen aus dem Langzeitgedächtnis abzurufen.
 //
 Darauf aufbauend folgt das
 "Verstehen",
 das es ermöglicht
 Wissen zusammenzufassen, zu interpretieren, zu vergleichen und zu erklären.
 //
-Nach der Stufe des 
-selbst "Anwenden",
-steht das Vermögen
-Sachverhalte
-zu
-"analysieren",
-also das Material in seine Einzelteile zu zerlegen,
-übergreifende Struktur und Zweck zu ermitteln
-sowie Muster zu erkennen.
+Die Stufe des
+"Anwendens"
+enthält
+das selbstständige Ausführen von
+Gelerntem.
+//
+Darauf
+folgt die Fähigkeit
+der "Analyse"
+von Sachverhalten,
+also die Zerlegung des Materials in seine einzelnen Komponenten,
+Identifikation übergreifender Struktur und Zweck
+sowie das Erkennen von Mustern.
 //
 Erst wer dazu in der Lage ist,
-wird auch
-"bewerten" können,
-sich ein Urteil bilden
-und Bestehendes kritisieren können.
+wird überhaupt die Grundlagen haben,
+um fachlich "bewerten" zu können,
+sich ein Urteil zu bilden,
+bis hin dazu, Bestehendes zu kritisieren.
 //
 An der Spitze der Taxonomie steht die Fähigkeit
 angeeignete Elemente zusammenzufügen,
 um Neues zu erschaffen.
 //
 @andersonTaxonomyLearningTeaching2001
+
 
 #figure(
   muchpdf(
@@ -60,68 +84,76 @@ um Neues zu erschaffen.
   Die Basis bildet die Stufe 'remember'.
   Darauf aufbauend folgen die Stufen
   'understand', 'apply', 'analyze' und 'evaluate'.
-  Die Spitze der Üyramide bildet die Stufe 'create'.
+  Die Spitze der Pyramide bildet die Stufe 'create'.
   "
   ),
   caption: [Blooms Pyramide, nach @andersonTaxonomyLearningTeaching2001. Eigene Darstellung],
 ) <pyramide>
 
+
 == ICAP (Interactive - Constructive - Active - Passive)
 
 Bei dem
-ICAP-Ansatz
-//(Interactive - Constructive - Active - Passive)
+#emph[ICAP]-Ansatz
 werden
 aufbauend auf
 dem
-Vorgehensmodell des "aktiven Lernens"
+Vorgehen des
+#emph[aktiven Lernens]
 vier Modelle
-der kognitive Lernaktivitäten
+kognitiver Lernaktivitäten
 definiert
 und Wege vorgeschlagen,
 wie
-Wissensveränderungsprozesse angestoßen werden sollten.
+Wissensveränderungsprozesse angestoßen werden sollten:
 //
-Zwar kann Wissen durch das passiven Empfangen von Informationen
-durch Zuhören oder Lesen
+Zwar kann Wissen durch passives Empfangen von Informationen
+beim Zuhören oder Lesen
 aufgebaut werden,
-dies stellt aber die niedrigste Stufe dar.
+dies stellt jedoch die niedrigste Stufe dar.
 //
 Die Wissensaufnahme kann aktiver gestaltet werden,
-zum Beispiel indem
-beim Zuhören zusätzlich Notizen gemacht werden
-oder beim Lesen Textstellen angestrichen werden
-und einzelne Passagen zusammengefasst werden.
+zum Beispiel durch
+das Anfertigen zusätzlicher Notizen während des Zuhörens,
+dem Anstreichen von Textstellen während des Lesens
+oder
+durch Zusammenfassen einzelner Passagen.
 //
-Konstruktives Verarbeiten ist
-über die Aufnahme von Erlerntem hinausgehendes
-Generieren von Dingen,
+Konstruktives Verarbeiten
+erfolgt,
+wenn
+über die Aufnahme von Erlerntem hinausgehend
+selbst etwas generiert wird,
 beispielsweise wenn
 in einer Vorlesung Fragen gestellt werden
 oder
 zu einem beschriebenen Zusammenhang eine Zeichnung angefertigt wird.
 //
 Die höchste Stufe des Modells
-ist die Interaktion mit dem Lerngegenstand,
-beispielsweise der Verteidigung eines Standpunkts in einer Gruppendiskussion
-bei der neue Ideen entstehen.
+wird erst durch Interaktion mit dem Lerngegenstand erreicht,
+beispielsweise durch Verteidigung eines Standpunkts in einer Gruppendiskussion,
+in deren Verlauf neue Ideen entstehen.
 //
+@chiICAPFrameworkLinking2014
+
+
 Diesen
-vier Lernaktivitäten
+Lernaktivitäten
 werden
 die jeweilig
 zu erwartenden kognitiven Ergebnisse gegenübergestellt:
 //
-Passiv erlangtes Wissen kann im wörtlich und im gleichen Kontext wiedergegeben werden,
+Passiv erlangtes Wissen kann wörtlich und im gleichen Kontext wiedergegeben werden,
 wohingegen aktiv Erlangtes auf ähnliche Kontexte angewendet werden kann.
 //
 Einmal generiertes Wissen kann in neuen Situationen angebracht werden,
-Kenntnis über das erlernte Konzept erlaubt Interpretation und Erklärungen,
+wobei
+Kenntnis über das erlernte Konzept Interpretation und Erklärungen erlaubt,
 auch unter geänderten Rahmenbedingungen.
 //
-Das tiefste Verständnis ist nach der Interaktion zu erwarten,
-potentiell können
-neue Produkte, Interpretationen und Ideen entstehen.
+Das tiefste Verständnis ist nach der Interaktion zu erwarten:
+Potentiell entstehen
+neue Produkte, Interpretationen und Ideen.
 @chiICAPFrameworkLinking2014
 
 
@@ -131,26 +163,32 @@ wie in @chiICAPFrameworkLinking2014 ?
 Wenn ja, dann auf jeden Fall Hinweis, dass Zuordnungen natürlich nicht immer 100% trennscharf sind!
 */
 
+
+
 == Methoden der Wissensvermittlung
 
-
-Die Essenz und das in diversen weiteren Ansätzen
-immer wieder zu beobachtender Lernmuster,
-// wie
-// "Active Student",
-// "Students Decide",
-// "Honor Questions",
-// "Test Tube",
-// "Try It Yourself",
-// "Prefer Writing",
-// "Role Play",
-// "War Game",
-// "Invisible Teacher",
+Die Essenz und ein in diversen weiteren Ansätzen
+#footnote[
+Vgl.
+  #[#set text(lang: "en");
+    "Active Student",
+    "Students Decide",
+    "Honor Questions",
+    "Test Tube",
+    "Try It Yourself",
+    "Prefer Writing",
+    "Role Play",
+    "War Game",
+    "Invisible Teacher",
+  ]
+  in
+  #cite(<ecksteinPatternsActiveLearning2002>, form: "full").
+]
+immer wieder zu beobachtende Muster
 ist die 
 möglichst aktive
 Beschäftigung mit dem Lerngegenstand
 durch die Lernenden selbst.
-@ecksteinPatternsActiveLearning2002
 //
 Wenn
 Jura-Studierende Gerichtsurteile aufarbeiten,
@@ -161,13 +199,13 @@ anhand der Begutachtung von Leichen
 die Todesursache ermitteln
 @ecksteinPatternsActiveLearning2002,
 wie können
-Programmierer:innen // TODO: Gender einheitlich
+Programmierer:innen
 sich
-//interaktiv
+interaktiv
 mit den
 abstrakten Themen
 der
-IT-Sicherheit und sichererer Programmierung
+IT-Sicherheit und sicheren Programmierung
 beschäftigen?
 
 
@@ -190,7 +228,7 @@ ebenfalls der untersten Stufe entspricht.
 //
 Eine aktivere Beschäftigung mit sicheren Programmiermethoden kann
 etwa bei
-Code reviews // TODO: Referenz zu Code Reviews? Ggf. sogar mit Hinweis auf Lernerfolg?
+#[#set text(lang: "en"); #emph[code reviews]] // TODO: Referenz zu Code Reviews? Ggf. sogar mit Hinweis auf Lernerfolg?
 das Hervorheben von
 fehlerhaftem Code sein.
 //
@@ -198,17 +236,19 @@ Werden Problembereiche auf diese Art erkannt,
 entspricht dies dem "Verstehen" auf der Bloomschen Skala.
 //
 Es darf erwartet werden,
-dass das Wissen genug abstrahiert wurde,
-um eine Chance darauf zu haben,
-ähnliche Fehler in ähnlichen Kontexten wieder entdecken zu können.
+dass das Wissen ausreichend abstrahiert wurde,
+sodass die Chance besteht,
+ähnliche Fehler in ähnlichen Kontexten erneut zu identifizieren.
 //
 Um sich 
 konstruktiv mit IT-Sicherheit zu beschäftigen,
-bieten sich sogenannte Hackathons an, // TODO: Referenz? Ggf. sogar mit Lernbezug?
-bei denen Sicherheitsrelevante Systeme oder Komponenten
+bieten sich
+#[#set text(lang: "en"); #emph[Hackathons]]
+an, // TODO: Referenz? Ggf. sogar mit Lernbezug?
+bei denen sicherheitsrelevante Systeme oder Komponenten
 entwickelt werden.
 //
-Eine Person
+Eine Person,
 die bereits einmal etwa ein Login-System entworfen oder implementiert hat,
 wird
 benötigte Verfahren nicht nur angewendet haben,
@@ -217,7 +257,8 @@ das Wissen auch in seine Bestandteile zerlegt
 und zumindest Teile davon analysiert haben.
 //
 Sie sollte diese Fähigkeit auch unter geänderten Rahmenbedingungen anwenden können.
-//
+
+
 Um die Stufe des tiefsten Verständnis zu erreichen,
 ist die Interaktion mit einer Sicherheitslücke selbst
 angebracht,
@@ -228,35 +269,36 @@ Angreifen eines Systems
 mit einer Sicherheitslücke.
 //
 Hat eine
-Angreifer:in // TODO: Gender einheitlich
+Angreifer:in
 es geschafft,
 eine Sicherheitslücke selbst auszunutzen,
 hat sie bewiesen das Wissen nicht nur analysiert,
 sondern auch umfassend bewertet
 sowie mit dem erfolgreichem Angriff etwas erschaffen zu haben.
 //
-Und sei dies nur in einer simulierten Umgebung geschehen,
+Selbst wenn dies nur in einer simulierten Umgebung geschehen ist,
 so darf trotzdem davon ausgegangen werden,
 dass das zugrundeliegende Problem wirklich verstanden wurde.
+
 
 // TODO: besser Überschrift
 == Serious Games ermöglichen Interaktion
 
 Die skizzierte
 Form der Interaktion
-werden auch als
-"Serious Games"
-bezeichnet.
+kann der Kategorie
+#[#set text(lang: "en"); #emph[serious game]]
+zugeordnet werden.
 //
 Allgemein
 werden diese entwickelt,
 um über reale Themen wie
 Gesundheitsfürsorge, Sicherheit oder Umweltfragen
-aufzuklären, zu schulen oder zu informieren.
-@cooperSoftwareEngineeringGames2023
+aufzuklären, zu schulen oder zu informieren
+@cooperSoftwareEngineeringGames2023.
 //
 Wenn
-Serious Games
+#[#set text(lang: "en"); serious games]
 das Lernen
 komplexer und
 technischer Themen
@@ -276,27 +318,32 @@ der IT-Sicherheit
 stellen
 Spieler
 sich
+auf diese Weise
 realistischen Herausforderungen.
 @costaDesigningSeriousGame2023
 
-Werden auf diese Art IT-Security Techniken vermittelt,
-findet dies üblicherweise im Rahmen von
-"capture the flag" (ctf)
+
+Werden auf diese Art Techniken der IT-Security vermittelt,
+findet dies oft im Rahmen von
+#[#set text(lang: "en"); #emph[capture the flag]]
 statt,
 einer Art
 IT-Security-Wettbewerb.
 //
 Hier gibt es 
 verschiedene Typen von
-Aufgaben ("challenges"),
-beispielsweise im "Jeopardy-style",
-bei dem es für gelöste
-Aufgaben in unterschiedlichen Kategorien Punkte zu gewinnen gibt.
-@ctfTimeOrgCtfWtf
+Aufgaben
+(#[#set text(lang: "en");#emph[challenges]]),
+beispielsweise im
+Stil der US-Amerikanischen Quizshow
+#[#set text(lang: "en");#emph[Jeopardy]],
+bei der es für gelöste
+Aufgaben in unterschiedlichen Kategorien Punkte zu gewinnen gibt
+@ctfTimeOrgCtfWtf.
 //
 Aufgaben in der Kategorie "Web"
 beispielsweise
-bestehen häufig aus
+bestehen üblicherweise aus
 einem Webserver,
 der den Spielern
 eine Website
@@ -310,8 +357,9 @@ indem
 die Sicherheitslücke(n)
 identifiziert und ausgenutzt
 werden.
-//
-Üblicherweise ist zu beobachten,
+
+
+Es ist zu beobachten,
 dass
 Teilnehmende
 großes Interesse
@@ -319,15 +367,16 @@ am wettbewerbsorientierten Lernen
 zeigen
 @siaminaminTeachingCyberSecurity2016
 und
-"capture the flag"-Aufgaben
+#[#set text(lang: "en");capture-the-flag]-Aufgaben
 die Interaktion von Lernenden
 mit dem Lerngegenstand
 erhöhen,
-was zu besser entwickelten
+was wiederum zu besser entwickelten
 Fähigkeiten
 im Umgang mit Sicherheitslücken
 führt
 @leuneUsingCapturetheFlagEnhance2017.
+
 
 Capture the Flag
 als
@@ -339,8 +388,9 @@ den Umgang mit Sicherheitslücken zu erlernen.
 //
 Sie sind 
 also ein geeignetes Mittel,
-um Kenntnisse im Bereich IT-Sicherheit
-zu vermitteln.
+um Kenntnisse im Bereich der IT-Sicherheit
+zu vermitteln
+und nachhaltig zu festigen.
 
 
 // == Anforderungen an serious games
@@ -373,4 +423,3 @@ zu vermitteln.
 // #footnote[Die Anforderungen werden gemeinsam mit der folgenden Evaluation in @tabEvaluation aufgelistet.]
 // definiert.
 // @espinhagasibaRequirementsSeriousGames2019
-
