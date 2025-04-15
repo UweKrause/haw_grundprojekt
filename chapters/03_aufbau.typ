@@ -18,7 +18,7 @@ ermöglicht.
 //
 In diesem
 serious game
-besteht die Aufgabe darin
+besteht die Aufgabe darin,
 eine
 bewusst platzierte
 Schwachstelle auszunutzen,
@@ -30,15 +30,15 @@ fördern soll.
 
 == Lernziele
 
-// Remember
 Teilnehmer:innen
 sollen
-diese
+die
+in der Lernumgebung integrierten
 Sicherheitslücken
 zukünftig
-kennen.
+kennen
+(#[#set text(lang: "en");#emph[remember]]).
 //
-// Understand
 Sie sollen
 verstanden haben,
 dass
@@ -47,44 +47,49 @@ wird,
 wenn
 eine Angreifer:in
 diese Lücke
-ausnutzt.
+ausnutzt
+(#[#set text(lang: "en");#emph[understand]]).
 //
-// Apply
 Eigener Code sollte
 zukünftig
 frei von
 diesem Problem
-sein.
+sein
+(#[#set text(lang: "en");#emph[apply]]).
 //
-// Analyze
-Sie sollen
-in der Lage sein
+Teilnehmer:innen
+sollen
+zudem
+in der Lage sein,
 eigenen oder fremden
 Code
 daraufhin
-zu analysieren
+zu analysieren,
 ob er
 diese oder eine ähnliche Sicherheitslücke
-enthält.
+enthält
+(#[#set text(lang: "en");#emph[analyze]]).
 //
-// Evaluate
 Sie
 sollten
-bewerten,
+bewerten können,
 ob
 verwundbarer Code
-ausgenutzt werden kann.
+ausgenutzt werden kann
+(#[#set text(lang: "en");#emph[evaluate]]).
 //
-// Create
 In einer
 etwaigen
 Diskussion
-sollen sie ihr Gegenüber
+sollen sie
+letztlich
+ihr Gegenüber
 davon überzeugen können,
 dass
 diese Lücke
-entfernt werden
-muss.
+geschlossen werden
+muss
+(#[#set text(lang: "en");#emph[create]]).
 
 #figure(
   muchpdf(
@@ -100,11 +105,11 @@ muss.
   und im Zweifelsfall jemanden davon zu überzeugen,
   das Problem zu beseitigen."
   ),
-  caption: [Lernziele in Relation zu Blooms Pyramide, nach @andersonTaxonomyLearningTeaching2001. Eigene Darstellung],
+  caption: [Lernziele in Relation zu Blooms Pyramide. Eigene Darstellung],
 ) <pyramideLernziele>
 
 
-=== Broken Access Control
+== Zu vermittelnde Sicherheitslücke: Broken Access Control
 
 Schwachstellen
 werden
@@ -141,7 +146,7 @@ der Kategorie
 "Mangelhafte Zugriffskontrolle".
 //
 Zugriffskontrollen bezeichnet
-Mechanismen
+Mechanismen,
 die sicherstellen,
 dass
 Nutzer:innen
@@ -164,7 +169,7 @@ die die Nutzer:in nicht können sollte.
 == Szenario
 
 Die Entstehung der Umgebung soll
-wenigstens grob
+in etwa
 der Entstehung einer realen Anwendung folgen.
 //
 In der anzugreifenden Umgebung soll sich eine
@@ -204,18 +209,21 @@ betreten werden.
 
 Die Entwickler:in
 kreiert die Konkurrenzplattform
-"Glesn"//
+#[#set text(lang: "de");#emph["Glesn"]]//
 #footnote[Bayrisch, vulg. für "gelesen", Anspielung auf "reddit", was selbst durch ein Wortspiel mit "I read it on reddit." entstanden ist @faqReddit2006.],
 //
 welche
 Anwender:innen
 verspricht,
-sich innerhalb eines geschützten "Space" mit Anderen austauschen zu können.
+sich innerhalb eines geschützten
+#[#set text(lang: "en");#emph[Space]]
+mit Anderen austauschen zu können.
 //
 Innerhalb der Spaces können
 Anwender:innen
-"Artikel" schreiben,
-die von Anderen nur gelesen werden können,
+#emph[Artikel]
+schreiben,
+die von Anderen nur dann gelesen werden können,
 wenn diese selbst Teil des Space sind,
 in dem der Artikel
 veröffentlicht
@@ -256,13 +264,13 @@ Architektur
 === Aufbau der Anwendung
 
 Das User-Interface der Website
-besteht aus einer Kopf-Bereich
+besteht aus einem Kopfbereich
 und einem Bereich für den anzuzeigenden Inhalt.
 //
 Der Kopfbereich ist aufgeteilt in
 einen Unter-Bereich für die Account-Verwaltung
 und
-einen Unter-Bereich für die Navigation.
+einen für die Navigation.
 //
 Anwender:innen können auf der Seite einen Account anlegen,
 in dem die Berechtigungen (Zugehörigkeit zu Spaces) hinterlegt sind.
@@ -283,7 +291,7 @@ für den verwendeten Account sichtbaren
 Spaces und Artikel
 aufgerufen werden.
 
-Die Artikel bestehen aus
+Die einzelnen Artikel bestehen aus
 einer Überschrift,
 der Information, welche Autor:in den Artikel verfasst hat,
 welchen Spaces der Artikel zugewiesen ist
@@ -302,8 +310,10 @@ Zeigt die App die Überschriften an, ist das ein leichterer Tipp für Teilnehmer
 	caption: [Screenshot der Website. In einem öffentlich einsehbareren Artikel wird das Funktionsprinzip erklärt.]
 ) <screenshotArticle2>
 
-Zu einzelnen
+Möchte man mehr über die
+einzelnen
 Autor:innen
+erfahren,
 kann eine Übersicht ihrer
 Artikel aufgerufen werden.
 //
@@ -311,7 +321,7 @@ Für angemeldete
 Anwender:innen besteht außerdem die Möglichkeit,
 die ausgewählte
 andere Person
-zu einem der Spaces einzuladen.
+zu einem der existierenden Spaces einzuladen.
 
 #figure(
 	image("../figures/screenshotUser12.png", width: 80%),
@@ -328,14 +338,14 @@ zu einem der Spaces einzuladen.
 Programmierer:innen
 von Web-Anwendungen
 unterliegen
-häufig der falschen Annahme,
+häufig dem Irrtum,
 dass
 die Bedienung
 nur mit den
 von der Anwendung selbst bereitgestellten
 Mitteln
-möglich ist.
-@CWE425
+möglich ist
+@CWE425.
 //
 Im Beispiel der Glesn-Anwendung
 werden sowohl
@@ -352,12 +362,13 @@ Berechtigungen
 (Zugehörigkeit zum Space)
 wird an dieser Stelle respektiert.
 //
-Über eine direkte Anfrage
+Über einen direkten
+Aufruf der URL
 ist
 jedoch
 ein gezielter Zugriff auf
 die
-Ressourcen-Übersichtsseite
+Übersichtsseite
 einer
 ausgewählten Ressource
 möglich.
@@ -421,7 +432,7 @@ in der grafischen Oberfläche
 in einer Auswahl-Liste
 für die Anwender:in
 nur
-die Spaces zum Einladen verfügbar,
+diejenigen Spaces zum Einladen verfügbar,
 zu denen
 Zugriff
 besteht.
@@ -438,7 +449,7 @@ Wieder
 wird die Annahme ausgenutzt,
 dass die vom Web-Server angebotenen Endpunkte
 ausschließlich wie von der Entwickler:in vorgesehen
-benutzt werden
+verwendet werden
 @CWE425.
 //
 In der Beispiel-Anwendung
@@ -449,7 +460,7 @@ durch
 die erste Berechtigungsprüfung
 bereits geschützt ist.
 //
-In diesem Szenario wird deshalb fehlendes Bewusstsein unterstellt,
+In diesem Szenario wird deshalb fehlendes Bewusstsein dahingehend unterstellt,
 dass vor dem erfolgreichen Aussprechen einer Einladung zu einem Space
 überprüft werden muss,
 ob die einladende Person überhaupt selbst
@@ -471,7 +482,7 @@ Eine
 Angreifer:in
 kann
 eine
-privilegierte Funktion aufzurufen,
+privilegierte Funktion aufrufen,
 die Daten in ihrem Sinne verändert.
 //
 Auf diese Weise erhält
@@ -524,7 +535,9 @@ ausgenutzt werden.
 //
 Die Sicherheitslücken müssen
 miteinander kombiniert werden,
-um zum Ziel zu kommen.
+um zum Ziel
+der Rechteaussweitung
+zu kommen.
 //
 Es sind aber
 keine
@@ -546,7 +559,7 @@ Einige Web-Browser (z.B. Firefox)
 erlauben von hier auch
 vor dem Wiederversenden eine Manipulation der Anfrage.
 
-Als erstes wird davon ausgegangen,
+Als Erstes wird davon ausgegangen,
 dass
 Angreifer:innen
 die Anwendung auskundschaften.
@@ -560,14 +573,13 @@ anhand ihrer ID aufgerufen werden.
 //
 Der sichtbare Space "Public"
 hat die
-`ID` `2`
+`ID`~`2`
 und
 im Browser wird als Navigationspfad
 `/space/2/`
 angezeigt.
 //
-Der darin abgelegte Artikel hat die Artikel-`ID`
-`2`
+Der darin abgelegte Artikel hat die Artikel-`ID`~`2`
 und wird
 über
 `/article/2/`
@@ -589,12 +601,12 @@ aufrufen lässt.
 	caption: [Screenshot der Netzwerkanalyse: Erfolgreicher GET Aufruf auf `/user/12/`.]
 ) <screenshotGETUser12>
 
-Dass die ersten sichtbaren Einträge die `ID` `2` haben,
+Dass die ersten sichtbaren Einträge die `ID`~`2` haben,
 soll
 als Hinweis verstanden werden,
 dass es unter den weiteren vorhandenen
-Spaces, Artikel und User-Accounts
-auch jeweils Objekte mit der `ID` `1` gibt,
+Spaces, Artikeln und User-Accounts
+auch jeweils Objekte mit der `ID`~`1` gibt,
 die von besonderem Interesse sein könnten.
 //
 Durch einen direkten Aufruf der Ressourcen,
@@ -604,7 +616,9 @@ können
 Informationen über
 weitere
 Spaces, Artikel und Autor:innen
-enumeriert werden.
+nach und nach ausgelesen
+(#emph[enumeriert])
+werden.
 //
 So enthalten die Beispieldaten
 unter anderem
@@ -616,9 +630,13 @@ und ein Artikel
 mit der Überschrift
 "Note FOR ADMINS ONLY !!!".
 //
-Die sehr deutlichen Namen
-sollen wieder ein Hinweis
-auf das zu erreichende Ziel sein.
+Diese sprechenden Namen
+sollen ein weiterer Hinweis
+auf das zu erreichende Ziel sein
+und den Teilnehmer:innen der
+ctf-Challenge
+somit
+Orientierung bieten.
 
 Nun sollte die nächste zur Verfügung stehende Funktionalität der Website verwendet werden:
 Die Registration eines neuen Accounts.
@@ -710,10 +728,9 @@ Notiz lesen.
 
 == Beta-Test
 
-Während der Entwicklung der Challenge
+Während der Entwicklung dieser Challenge
 wurde ein Beta-Test durchgeführt,
 bei dem sich
-freundlicherweise
 mehrere Mitglieder des
 lokalen CTF-Teams
 Cyclopropenylidene (`C3H2`)
@@ -724,10 +741,11 @@ der Aufgabe zu lösen.
 Aus den
 gesammelten
 Rückmeldungen
-sind Zwei Punkte
+sind zwei Punkte
 besonders nennenswert:
 
-In einer früheren Version
+In einem früheren Entwicklungsstand
+der Challenge
 wurden
 in die
 Datenbank der
@@ -748,12 +766,19 @@ Artikel
 eine unvorhersehbare `ID`
 wie `17` oder `19`
 hatte,
-wodurch wiederum das Ziel nicht so klar war.
+wodurch
+wiederum
+einzelnen Beta-Tester:innen
+das Ziel nicht deutlich genug war.
 //
 Einer der Beta-Tester hat angemerkt,
 dass
 die `IDs` als eine Art Hinweis verwendet werden könnten,
-wie dann später umgesetzt.
+was
+in einer
+späteren
+Version der Challenge
+umgesetzt wurde.
 
 Außerdem wurde
 ein
@@ -766,7 +791,8 @@ diesem Account
 Zugriff auf den versteckten Space
 gegeben,
 sondern
-mit Hilfe eines http replay Proxy
+mit Hilfe eines
+#[#set text(lang: "en");#emph[http replay proxy]]
 die Sicherheitslücke
 so ausgenutzt,
 dass alle Accounts Zugriff auf den versteckten Space hatten.
@@ -781,13 +807,12 @@ Zugriff auf den versteckten Space
 hatte.
 //
 Für diese Challenge ist es also notwendig,
-dass sie pro Person/Team als eigene isolierte Instanz bereitgestellt werden
-muss.
+sie pro Person/Team als eigene isolierte Instanz bereitzustellen.
 
 
-== Durchführung Workshop
+== Durchführung eines Workshops
 
-Während der sogenannten [Workshop Week]
+Während der sogenannten "[Workshop Week]"
 an der
 Hochschule für Angewandte Wissenschaften
 (HAW) Hamburg
@@ -810,17 +835,17 @@ eingeführt.
 // 		- Bachelor
 // 		- Master
 //
-Es wurde
-zwar
-keine strukturierte Evaluation
-durchgeführt,
-aber
-aus Reaktionen während der Veranstaltung
+// Es wurde
+// zwar
+// keine strukturierte Evaluation
+// durchgeführt,
+// aber
+Aus Reaktionen während der Veranstaltung
 und
-in unstrukturierten Gesprächen
+in Gesprächen
 nach der Veranstaltung
 wurde ersichtlich,
-dass wenigstens
+dass
 einzelne Teilnehmer:innen
 gelernt haben,
 wie leicht
@@ -828,7 +853,7 @@ http-Anfragen wie `GET` und `POST`
 manipuliert werden können
 und wie wichtig daher eine
 serverseitige
-Überprüfunge // todo: ?
+Überprüfung // todo: ?
 der Nutzereingaben
 ist.
 //
@@ -839,5 +864,3 @@ an dieser
 Lernform zu
 IT-Sicherheitsthemen
 geäußert.
-
-
