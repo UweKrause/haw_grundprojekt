@@ -9,13 +9,13 @@ aufbauend auf
 der didaktischen Basis von
 Blooms Taxonomie
 eine Methode gesucht,
-mit dem Ziel
+mit dem Ziel,
 das Bewusstsein für
 Sicherheitsprobleme bei der Programmierung
 von IT-Systemen
 zu steigern.
 //
-Während der ICAP-Ansatzes
+Während der ICAP-Ansatz
 eine möglichst starke Interaktion mit dem Lerngegenstand
 nahelegt,
 interagieren
@@ -58,16 +58,18 @@ Aus den Rückmeldungen
 der Teilnehmer:innen
 war Lernerfolg und gesteigertes Interesse
 für interaktives Lernen von
-IT-Sicherheitsthemen (ctf)
+IT-Sicherheitsthemen
+und capture the flag
+als Methode
 ersichtlich.
 
-== Ausblick
 
+== Ausblick
 
 Aufbauend auf und ergänzend zu diesem Beispiel
 sollten
 weitere
-Empfehlungen für Verbesserungen und Erkenntnisse zur Gestaltung und Entwicklung effektiverer Serious Games
+Empfehlungen für Verbesserungen und Erkenntnisse zur Gestaltung und Entwicklung effektiverer serious games
 @wanickFutureDirectionsGames2023
 betrachtet werden,
 um
@@ -83,15 +85,15 @@ zur User Experience
 aus
 der allgemeinen Spiele-Entwicklung
 oder
-dem Übergeordneten Feld der "serious games" auch auf
+dem Übergeordneten Feld der serious games auch auf
 die entwickelte Challenge adaptiert werden
 @kirginasUserExperienceEvaluation2023.
 //[User Experience Evaluation Methods for Games in Serious Contexts]
 
-Die entwickelte Challenge sollte geprüft werden,
+Die entwickelte Challenge sollte daraufhin überprüft werden,
 ob sie formulierten
 Anforderungen an
-Lernumgebungen für Serious Games
+Lernumgebungen für serious games
 @espinhagasibaRequirementsSeriousGames2019
 entspricht.
 //
