@@ -8,7 +8,7 @@
   language: "de",
   title: "(wip) Noch kein Titel",
   author:"Uwe Krause",
-  faculty: "Computer Science and Digital Society",
+  faculty: "Informatik und Digitale Gesellschaft",
 )
 
 // Enable glossary
