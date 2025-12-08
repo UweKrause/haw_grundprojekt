@@ -182,7 +182,7 @@ Vgl.
     "Invisible Teacher",
   ]
   in
-  #cite(<ecksteinPatternsActiveLearning2002>, form: "full").
+  #cite(<ecksteinPatternsActiveLearning2002>).
 ]
 immer wieder zu beobachtende Muster
 ist die 
