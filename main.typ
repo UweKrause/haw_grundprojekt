@@ -46,4 +46,4 @@
 // Print bibliography
 #pagebreak(weak: true)
 
-#bibliography("bibliography.bib", style: "ieeetran.csl")
+#bibliography("bibliography.bib", style: "iso-690-author-date")
