@@ -1,4 +1,4 @@
-#import "@preview/haw-hamburg:0.4.0": report
+#import "@preview/haw-hamburg:0.8.0": report
 
 #import "dependencies.typ": *
 
@@ -8,9 +8,7 @@
   language: "de",
   title: "(wip) Noch kein Titel",
   author:"Uwe Krause",
-  faculty: "Engineering and Computer Science",
-  department: "Computer Science",
-  include-declaration-of-independent-processing: false,
+  faculty: "Computer Science and Digital Society",
 )
 
 // Enable glossary
