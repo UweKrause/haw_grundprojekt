@@ -46,4 +46,4 @@
 // Print bibliography
 #pagebreak(weak: true)
 
-#bibliography("bibliography.bib", style: "iso-690-author-date")
+#bibliography("bibliography.bib", style: "./din-1505-2.csl")
