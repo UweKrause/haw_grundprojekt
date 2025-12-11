@@ -28,8 +28,8 @@ für einen
 auf eine Sicherheitslücke
 zurückführbaren
 Datenschutzverstoß
-ausgegangen.
-@CostDataBreach
+ausgegangen
+@CostDataBreach.
 //
 Da
 die Ursachen für Sicherheitslücken in
@@ -54,7 +54,7 @@ potentiell problematischen
 Code
 generieren~--
 ist
-das Schaffen 
+das Schaffen
 oder
 Erhöhen
 eines Problembewusstseins,
@@ -117,15 +117,18 @@ soll
 dafür sorgen,
 dass sie
 künftig
+die Kompetenzen erhalten,
 diese und ähnliche
 Unachtsamkeiten
 nicht nur
 nicht mehr
 in eigenem Code
+zu
 produzieren,
 sondern auch
 in fremden Code
 identifizieren
+zu
 können.
 
 
@@ -159,7 +162,11 @@ können
 Übungen
 nach dem Vorbild von
 #[#set text(lang: "en"); #emph[capture the flag]]
-@ctfTimeOrgCtfWtf
+#footnote[Siehe beispielsweise
+@eagleCapturetheFlagLearningComputer2004,
+@mcdanielCaptureFlagCyber2016,
+@tsepelisBeginnersGuideCTFs2025
+]
 verwendet werden.
 //
 Die Anwendung
@@ -182,9 +189,11 @@ zu schärfen.
 
 
 Die
-weitverbreitetste Sicherheitslücke
-im Internet
-ist die
+weitverbreitetste
+Kategorie von Sicherheitslücke
+bei der Programmierung von Internetseiten
+ist
+eine
 mangelhafte Zugriffskontrolle
 @OWASPTopTen2021_de.
 //
@@ -196,9 +205,11 @@ besser greifbar werden,
 wird
 in dieser Arbeit
 eine
-absichtlich verwundbare
-Testumgebung
-entwickelt.
+Internetseite
+entwickelt,
+die absichtlich
+Fehler aus dieser Kategorie
+enthält.
 //
 Diese
 #[#set text(lang: "en"); #emph[Challenge]]

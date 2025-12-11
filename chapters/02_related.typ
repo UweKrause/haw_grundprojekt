@@ -28,6 +28,7 @@ wenn sie sich aktiv mit dem Lerngegenstand beschäftigen.
 == Blooms Taxonomie
 
 Gemäß Blooms (überarbeiteter) Taxonomie
+@andersonTaxonomyLearningTeaching2001
 werden
 verschiedene
 aufeinander aufbauende
@@ -72,8 +73,6 @@ bis hin dazu, Bestehendes zu kritisieren.
 An der Spitze der Taxonomie steht die Fähigkeit
 angeeignete Elemente zusammenzufügen,
 um Neues zu erschaffen.
-//
-@andersonTaxonomyLearningTeaching2001
 
 
 #figure(
@@ -95,6 +94,7 @@ um Neues zu erschaffen.
 
 Bei dem
 #emph[ICAP]-Ansatz
+@chiICAPFrameworkLinking2014
 werden
 aufbauend auf
 dem
@@ -133,8 +133,6 @@ Die höchste Stufe des Modells
 wird erst durch Interaktion mit dem Lerngegenstand erreicht,
 beispielsweise durch Verteidigung eines Standpunkts in einer Gruppendiskussion,
 in deren Verlauf neue Ideen entstehen.
-//
-@chiICAPFrameworkLinking2014
 
 
 Diesen
@@ -185,7 +183,7 @@ Vgl.
   #cite(<ecksteinPatternsActiveLearning2002>).
 ]
 immer wieder zu beobachtende Muster
-ist die 
+ist die
 möglichst aktive
 Beschäftigung mit dem Lerngegenstand
 durch die Lernenden selbst.
@@ -214,8 +212,6 @@ Konzepte der IT-Sicherheit
 über Vorträge oder Webinare zu IT-Sicherheit
 zu vermitteln,
 stellen diese
-(sofern sie denn überhaupt wahrgenommen werden; // TODO: Referenz auf geringen Lernerfolg?
-ungeteilte Aufmerksamkeit vorausgesetzt)
 lediglich
 die niedrigste Stufe der ICAP-Skala
 dar.
@@ -240,7 +236,7 @@ dass das Wissen ausreichend abstrahiert wurde,
 sodass die Chance besteht,
 ähnliche Fehler in ähnlichen Kontexten erneut zu identifizieren.
 //
-Um sich 
+Um sich
 konstruktiv mit IT-Sicherheit zu beschäftigen,
 bieten sich
 #[#set text(lang: "en"); #emph[Hackathons]]
@@ -259,36 +255,38 @@ und zumindest Teile davon analysiert haben.
 Sie sollte diese Fähigkeit auch unter geänderten Rahmenbedingungen anwenden können.
 
 
-Um die Stufe des tiefsten Verständnis zu erreichen,
-ist die Interaktion mit einer Sicherheitslücke selbst
-angebracht,
-etwa durch
-das Verteidigen
-oder
-Angreifen eines Systems
-mit einer Sicherheitslücke.
+Dieser Logik folgend
+wird die Interaktion mit einer Sicherheitslücke selbst
+zu den drei Stufen des tiefsten Verständnis führen:
 //
-Hat eine
-Angreifer:in
-es geschafft,
-eine Sicherheitslücke selbst auszunutzen,
-hat sie bewiesen das Wissen nicht nur analysiert,
-sondern auch umfassend bewertet
-sowie mit dem erfolgreichem Angriff etwas erschaffen zu haben.
+Eine Person,
+die selbst in die Rolle einer Angreifer:in geschlüpft ist
+und es geschafft hat
+eine Sicherheitslücke auszunutzen,
+hat hierdurch bewiesen,
+die Lücke nicht nur analysiert,
+sondern auch umfassend bewertet zu haben.
 //
-Selbst wenn dies nur in einer simulierten Umgebung geschehen ist,
-so darf trotzdem davon ausgegangen werden,
+Wurde
+mit
+diesem Wissen
+sogar ein erfolgreicher Angriff erschaffen,
+so darf davon ausgegangen werden,
 dass das zugrundeliegende Problem wirklich verstanden wurde.
 
 
-// TODO: besser Überschrift
-== Serious Games ermöglichen Interaktion
+== Interaktion mit Sicherheitslücken (Serious Games)
 
+Der Umgang mit derartigen Sicherheitslücken
+sollte nicht mit Produktivsystemen ausprobiert werden.
+//
 Die skizzierte
 Form der Interaktion
-kann der Kategorie
-#[#set text(lang: "en"); #emph[serious game]]
-zugeordnet werden.
+kann
+aber als Thema
+sogenannter
+#[#set text(lang: "en"); #emph[serious games]]
+behandelt werden.
 //
 Allgemein
 werden diese entwickelt,
@@ -328,9 +326,11 @@ findet dies oft im Rahmen von
 #[#set text(lang: "en"); #emph[capture the flag]]
 statt,
 einer Art
-IT-Security-Wettbewerb.
+IT-Security-Wettbewerb
+@eagleCapturetheFlagLearningComputer2004
+@mcdanielCaptureFlagCyber2016.
 //
-Hier gibt es 
+Hier gibt es
 verschiedene Typen von
 Aufgaben
 (#[#set text(lang: "en");#emph[challenges]]),
@@ -339,10 +339,9 @@ Stil der US-Amerikanischen Quizshow
 #[#set text(lang: "en");#emph[Jeopardy]],
 bei der es für gelöste
 Aufgaben in unterschiedlichen Kategorien Punkte zu gewinnen gibt
-@ctfTimeOrgCtfWtf.
+@tsepelisBeginnersGuideCTFs2025.
 //
 Aufgaben in der Kategorie "Web"
-beispielsweise
 bestehen üblicherweise aus
 einem Webserver,
 der den Spielern
@@ -380,13 +379,14 @@ führt
 
 Capture the Flag
 als
-Eigenart der Serious Games
+Eigenart der serious games
 bieten Teilnehmenden
-eine Möglichkeit in einer
-extra hierfür bereitgestellten Umgebungen
-den Umgang mit Sicherheitslücken zu erlernen.
+eine Möglichkeit
+anhand
+extra hierfür bereitgestellter Systeme
+den parktischen Umgang mit Sicherheitslücken zu erlernen.
 //
-Sie sind 
+Sie sind
 also ein geeignetes Mittel,
 um Kenntnisse im Bereich der IT-Sicherheit
 zu vermitteln
@@ -394,7 +394,7 @@ und nachhaltig zu festigen.
 
 
 // == Anforderungen an serious games
-// 
+//
 // Damit
 // die eingesetzten Ressourcen
 // möglichst optimal
@@ -409,7 +409,7 @@ und nachhaltig zu festigen.
 // an die Interaktionsumgebung
 // klar formuliert sein.
 // //
-// Für 
+// Für
 // Serious Games
 // die sich an
 // praktizierende

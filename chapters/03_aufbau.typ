@@ -5,27 +5,32 @@
 Im Folgenden
 wird
 eine Lernumgebung
-aufgebaut,
-die die Interaktion
+dokumentiert,
+innerhalb derer
+die Interaktion
 mit einem
-weit verbreitetem
+weit verbreiteten
 und für
 Programmierer:innen
 direkt
 relevanten
-IT-Sicherheitsproblem
-ermöglicht.
+IT-Sicherheits-?problem
+möglich ist.
 //
-In diesem
+Anhand des aufgebauten Systems
+soll ein
 serious game
-besteht die Aufgabe darin,
+durchführbar sein,
+dessen Ziel darin besteht,
 eine
 bewusst platzierte
-Schwachstelle auszunutzen,
-was
+Schwachstelle auszunutzen.
+//
+Dies soll
 ein tiefes Verständnis
 für die Problematik
-fördern soll.
+der platzierten Sicherheitslücke
+fördern.
 
 
 == Lernziele
@@ -716,7 +721,7 @@ Notiz lesen.
 // == Realitätsbezug
 // TODO: ggf ergänzen.
 // Bezug auf OWASP Top 10 sollte ausreichen.
-// 
+//
 // 2024 September: KIA
 // - News
 // 	- Spiegel: #link("https://www.spiegel.de/netzwelt/gadgets/kia-hacker-konnten-per-app-autos-orten-und-fernsteuern-a-dc1f2592-d3b5-4619-89bf-4cfdd74c7804")[Hacker konnten koreanische Autos per App orten, starten, hupen lassen]
