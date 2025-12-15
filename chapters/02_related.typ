@@ -384,10 +384,11 @@ bieten Teilnehmenden
 eine Möglichkeit
 anhand
 extra hierfür bereitgestellter Systeme
-den parktischen Umgang mit Sicherheitslücken zu erlernen.
+den praktischen Umgang mit Sicherheitslücken zu erlernen.
 //
-Sie sind
-also ein geeignetes Mittel,
+Im Folgenden wird davon ausgegangen,
+dass dies
+also ein geeignetes Mittel ist,
 um Kenntnisse im Bereich der IT-Sicherheit
 zu vermitteln
 und nachhaltig zu festigen.

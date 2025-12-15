@@ -105,10 +105,3 @@ von Anfang an integriert werden.
 Stehen mehrere Challenges zur Verfügung,
 können diese für ein
 "Capture The Flag"-Event verwendet werden.
-//
-Ein solches Event kann anhand eines
-festgelegten Rahmenwerks
-mit anderen Events verglichen werden
-@ramanFrameworkEvaluatingCapture2014.
-//[Framework for evaluating Capture the Flag (CTF) security competitions]
-

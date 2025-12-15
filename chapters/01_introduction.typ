@@ -195,7 +195,7 @@ bei der Programmierung von Internetseiten
 ist
 eine
 mangelhafte Zugriffskontrolle
-@OWASPTopTen2021_de.
+@owaspA01BrokenAccess2025.
 //
 Damit
 die Auswirkungen

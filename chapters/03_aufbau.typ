@@ -2,7 +2,7 @@
 
 = Interaktive Lernumgebung
 
-Im Folgenden
+Im praktischen Teil dieser Arbeit
 wird
 eine Lernumgebung
 dokumentiert,
@@ -35,8 +35,19 @@ fördern.
 
 == Lernziele
 
+
+// TODO!
+// Übergang von
+// -> Ausnutzung der Sicherheitslücken
+// zu
+// -> diese Sicherheitslücken selbst nicht mehr einbauen.
+
+Auch wenn das Ziel dieses serious games
+das Ausnutzen einer Sicherheitslücke ist,
+so ist dies nicht das eigentliche Lernziel.
+//
+Vielmehr sollen
 Teilnehmer:innen
-sollen
 die
 in der Lernumgebung integrierten
 Sicherheitslücken
@@ -116,14 +127,21 @@ muss
 
 == Zu vermittelnde Sicherheitslücke: Broken Access Control
 
+Als Versuch
+ein einheitliches Vokabular
+innerhalb
+von Organisationen
+und der IT-Industrie insgesamt
+zu schaffen,
+sammelt die
+not-for-profit Organisation MITRE
+#footnote[Finanziert
+unter anderem
+vom U.S. Department of Homeland Security.]
 Schwachstellen
-werden
-von der
-MITRE-Organisation
 in einer
-"Common Weakness Enumeration"-Liste (CWE)
-gesammelt.
-@CWEList4.16
+"Common Weakness Enumeration", CWE-Liste
+@CWEList4.16.
 //
 In den
 OWASP "Top 10 Web Application Security Risks"
@@ -137,14 +155,14 @@ wiederum
 nach
 Inzidenzrate
 geordnet.
-@OWASPTopTen2021_de
 //
 Auf
 Platz 1
 der schwerwiegendsten Sicherheitsrisiken
-im Betrachtungszeitraum
-#footnote[Die nächste Ausgabe der "Top 10 Web Application Security Risks" wurde für "die erste Jahreshälfte 2025" angekündigt. @OWASPTopTen2021]
+sowohl im Betrachtungszeitraum
 2017 -- 2021
+als auch
+2021 -- 2025
 befinden
 sich Fehler
 der Kategorie
@@ -168,7 +186,8 @@ kann
 oder eine Anwendung dazu bringen kann,
 Dinge zu tun,
 die die Nutzer:in nicht können sollte.
-@A01:2021_de
+@owaspA01BrokenAccess2021
+@owaspA01BrokenAccess2025
 
 
 == Szenario
@@ -276,9 +295,19 @@ Der Kopfbereich ist aufgeteilt in
 einen Unter-Bereich für die Account-Verwaltung
 und
 einen für die Navigation.
-//
+
 Anwender:innen können auf der Seite einen Account anlegen,
 in dem die Berechtigungen (Zugehörigkeit zu Spaces) hinterlegt sind.
+#footnote[
+Stellvertretend für Systemen mit einer Rollen-Basierten Zugriffskontrolle
+(#[#set text(lang: "en");#emph[RBAC]],
+#[#set text(lang: "en");"Role-Based Access Control"]).
+]
+
+#figure(
+	image("../figures/screenshotArticle2_fade.png"),
+	caption: [Screenshot der Website. In einem öffentlich einsehbareren Artikel wird das Funktionsprinzip erklärt.]
+) <screenshotArticle2>
 
 Eine Einstiegsseite erklärt das Prinzip der Seite,
 also
@@ -310,11 +339,6 @@ Zeigt die App die Überschriften nicht an ist Enumerieren über die Meta-Daten "
 Zeigt die App die Überschriften an, ist das ein leichterer Tipp für Teilnehmer.
 */
 
-#figure(
-	image("../figures/screenshotArticle2_fade.png", width: 80%),
-	caption: [Screenshot der Website. In einem öffentlich einsehbareren Artikel wird das Funktionsprinzip erklärt.]
-) <screenshotArticle2>
-
 Möchte man mehr über die
 einzelnen
 Autor:innen
@@ -329,16 +353,26 @@ andere Person
 zu einem der existierenden Spaces einzuladen.
 
 #figure(
-	image("../figures/screenshotUser12.png", width: 80%),
+	image("../figures/screenshotUser12.png"),
 	caption: [Screenshot der Website mit Auflistung der von einer Person verfassten Artikel. Die Person kann zu einem Space eingeladen werden.]
 ) <screenshotUser12>
 
 
 == Sicherheitslücken in der Anwendung
 
-// TODO: Einführung?
-
-=== Auslesen von Meta-Daten trotz fehlender Zugriffsberechtigung
+Nun besteht der eigentliche Zweck der Anwendung
+nicht in dem Austausch von Nachrichten,
+sondern
+darin,
+den
+zu lehrenden Inhalten
+einen
+mehr oder weniger realistischen Rahmen zu geben.
+//
+Dem Szenario folgend
+hat "die Entwickler:in der Plattform" mehrere
+Fehler gemacht,
+die zu ausnutzbaren Sicherheitslücken führen.
 
 Programmierer:innen
 von Web-Anwendungen
@@ -350,8 +384,14 @@ nur mit den
 von der Anwendung selbst bereitgestellten
 Mitteln
 möglich ist
-@CWE425.
-//
+(CWE425),
+weshalb zwei Sicherheitslücken
+dieser Art hinterlegt werden.
+
+
+=== Auslesen von Meta-Daten trotz fehlender Zugriffsberechtigung
+
+
 Im Beispiel der Glesn-Anwendung
 werden sowohl
 in der Spaces-,
@@ -365,8 +405,9 @@ auf die die Anwender:in Zugriff hat.
 Die vergebenen
 Berechtigungen
 (Zugehörigkeit zum Space)
-wird an dieser Stelle respektiert.
-//
+werden beim Aufbau der Bedienoberfläche
+also respektiert.
+
 Über einen direkten
 Aufruf der URL
 ist
@@ -409,7 +450,7 @@ zumindest alle Artikel-Überschriften
 zu Autor:innen zuweisen lassen,
 ist dies als
 Informationsleck
-@CWE200
+(CWE200)
 zu betrachten.
 
 
@@ -441,7 +482,7 @@ diejenigen Spaces zum Einladen verfügbar,
 zu denen
 Zugriff
 besteht.
-//
+
 Eine
 Angreifer:in
 kann die Oberfläche jedoch umgehen
@@ -455,7 +496,7 @@ wird die Annahme ausgenutzt,
 dass die vom Web-Server angebotenen Endpunkte
 ausschließlich wie von der Entwickler:in vorgesehen
 verwendet werden
-@CWE425.
+(CWE425).
 //
 In der Beispiel-Anwendung
 wurde davon ausgegangen,
@@ -506,8 +547,8 @@ umgangen
 und
 die Vertraulichkeit
 der Anwendung
-verletzt.
-@CWE862
+verletzt
+(CWE862).
 
 // Rechte-Ausweitung (innerhalb der Plattform):
 // //
@@ -529,8 +570,14 @@ verletzt.
 // Diesem wird nun von der Anwendung Administrationsrechte zugesprochen.
 
 
-== Angedachter Lösungsweg <angedachterLösungsweg>
+== Ausnutzen der Sicherheitslücken <angedachterLösungsweg>
 
+Zu dieser Art von Aufgaben
+gehört ein angedachter Lösungsweg,
+eine Art Ablaufplan,
+von dem zumindest erwartet wird,
+dass die Angreifer:innen ungefähr diesem Pfad folgen.
+//
 Die Challenge lässt sich
 lösen,
 indem die
@@ -540,19 +587,20 @@ ausgenutzt werden.
 //
 Die Sicherheitslücken müssen
 miteinander kombiniert werden,
-um zum Ziel
+um
+ausgehend von einer unautentifizierten Anwender:in
+zum Ziel
 der Rechteaussweitung
 zu kommen.
+
+Besondere Angriffswerkzeuge
+werden nicht vorausgesetzt.
 //
-Es sind aber
-keine
-besonderen Angriffswerkzeuge
-vonnöten,
-ein üblicher Webbrowser reicht aus.
-//
-Mit dem Werkzeug der
+Mit dem
+in modernen Webbrowsern vorhandenem
+Werkzeug der
 "Netzwerkanalyse",
-können in modernen Browsern
+können
 die einzelnen Aufrufe auf technischer Ebene
 protokolliert,
 eingesehen
@@ -561,12 +609,14 @@ erneut versendet
 werden.
 //
 Einige Web-Browser (z.B. Firefox)
-erlauben von hier auch
-vor dem Wiederversenden eine Manipulation der Anfrage.
+erlauben an dieser Stelle auch
+eine Manipulation der Anfrage
+vor dem Wiederversenden.
 
 Als Erstes wird davon ausgegangen,
 dass
 Angreifer:innen
+ohne eigenen Nutzer-Zugriff
 die Anwendung auskundschaften.
 //
 Hierbei sollte schon ohne Account
@@ -602,7 +652,7 @@ aufrufen lässt.
 @screenshotGETUser12 zeigt einen Ausschnitt der Netzwerkanalyse.
 
 #figure(
-	image("../figures/screenshotGETUser12.png", width: 100%),
+	image("../figures/screenshotGETUser12.png"),
 	caption: [Screenshot der Netzwerkanalyse: Erfolgreicher GET Aufruf auf `/user/12/`.]
 ) <screenshotGETUser12>
 
@@ -672,7 +722,7 @@ wie in
 dargestellt.
 
 #figure(
-	image("../figures/screenshotPOSTUser12Space.png", width: 100%),
+	image("../figures/screenshotPOSTUser12Space.png"),
 	caption: [Screenshot der Netzwerkanalyse: Erfolgreicher POST Aufruf auf `/user/12/` mit Argument ```json space_id: "17"```.]
 ) <screenshotPOSTUser12Space>
 
