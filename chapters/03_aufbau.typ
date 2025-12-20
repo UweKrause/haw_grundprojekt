@@ -572,12 +572,6 @@ verletzt
 
 == Ausnutzen der Sicherheitslücken <angedachterLösungsweg>
 
-Zu dieser Art von Aufgaben
-gehört ein angedachter Lösungsweg,
-eine Art Ablaufplan,
-von dem zumindest erwartet wird,
-dass die Angreifer:innen ungefähr diesem Pfad folgen.
-//
 Die Challenge lässt sich
 lösen,
 indem die
@@ -585,13 +579,20 @@ innerhalb der Anwendung
 platzierten Schwachstellen
 ausgenutzt werden.
 //
-Die Sicherheitslücken müssen
-miteinander kombiniert werden,
-um
-ausgehend von einer unautentifizierten Anwender:in
-zum Ziel
-der Rechteaussweitung
-zu kommen.
+Damit
+eine initial nicht authentifizierte Anwender:in
+ihre Zugriffsrechte ausweiten kann,
+müssen
+die Sicherheitslücken
+miteinander kombiniert werden.
+//
+Hierbei wird davon ausgegangen,
+dass
+zumindest ungefähr
+einem
+angedachten Pfad
+gefolgt wird,
+dem Lösungsweg.
 
 Besondere Angriffswerkzeuge
 werden nicht vorausgesetzt.
@@ -863,59 +864,3 @@ hatte.
 //
 Für diese Challenge ist es also notwendig,
 sie pro Person/Team als eigene isolierte Instanz bereitzustellen.
-
-
-== Durchführung eines Workshops
-
-Während der sogenannten "[Workshop Week]"
-an der
-Hochschule für Angewandte Wissenschaften
-(HAW) Hamburg
-im September 2024
-wurden
-mit Hilfe
-diese Challenge
-in einer
-halbtägigen
-Veranstaltung
-ca. 12 Teilnehmer:innen
-in
-das Problemfeld
-der
-mangelhaften Zugriffskontrolle
-eingeführt.
-//
-// - Studierende
-// 	- Informatik
-// 		- Bachelor
-// 		- Master
-//
-// Es wurde
-// zwar
-// keine strukturierte Evaluation
-// durchgeführt,
-// aber
-Aus Reaktionen während der Veranstaltung
-und
-in Gesprächen
-nach der Veranstaltung
-wurde ersichtlich,
-dass
-einzelne Teilnehmer:innen
-gelernt haben,
-wie leicht
-http-Anfragen wie `GET` und `POST`
-manipuliert werden können
-und wie wichtig daher eine
-serverseitige
-Überprüfung // todo: ?
-der Nutzereingaben
-ist.
-//
-Zusätzlich dazu
-wurde ein
-deutliches Interesse
-an dieser
-Lernform zu
-IT-Sicherheitsthemen
-geäußert.

@@ -104,4 +104,5 @@ von Anfang an integriert werden.
 
 Stehen mehrere Challenges zur Verfügung,
 können diese für ein
-"Capture The Flag"-Event verwendet werden.
+"Capture The Flag"-Event verwendet werden,
+um weiteres Feedback zu sammeln.
