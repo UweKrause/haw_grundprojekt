@@ -94,16 +94,3 @@ geäußert.
 == Verwendung für einen geführten Workshop auf einer großen IT-Konferenz (39c3) mit ca. 60 -- 70 Teilnehmer:innen
 
 (TODO)
-
-
-// == Diskussion
-//
-// Die Evaluation zeigt, dass
-//
-// - ...?
-// - Zielgrupopenorientiertheit (zugeschnitten auf Jobtitle) weiterhin schwierig
-// - ... ?
-// - Challenges are put from the defensive perspective
-// 	- not fulfilled??
-// - ...?
-//

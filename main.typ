@@ -36,8 +36,6 @@
 
 #include "chapters/04_verwendung.typ"
 
-// #include "chapters/04_evaluation.typ"
-
 #include "chapters/05_fazit.typ"
 
 // Print glossary

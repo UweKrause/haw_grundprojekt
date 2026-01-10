@@ -63,6 +63,8 @@ und capture the flag
 als Methode
 ersichtlich.
 
+(TODO: FAZIT AUS DEN ANDEREN WORKSHOPS EINARBEITEN)
+
 
 == Ausblick
 
