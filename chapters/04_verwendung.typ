@@ -102,6 +102,12 @@ geäußert.
 
 (TODO)
 
+
+== Durchführung eines Workshops auf dem Chaos Communication Congress (39c3) mit ca. 60 -- 70 Teilnehmer:innen
+
+(TODO)
+
+
 // == Diskussion
 //
 // Die Evaluation zeigt, dass
