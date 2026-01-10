@@ -23,51 +23,40 @@ diese Challenge
 in einer
 halbtägigen
 Veranstaltung
-ca. 12 Teilnehmer:innen
+12 Teilnehmer:innen
 in
 das Problemfeld
 der
 mangelhaften Zugriffskontrolle
 eingeführt.
-//
+
 Ein Großteil der Teilnehmer:innen
-(9) studiert im Bachelorstudiengang Informatik im vierten bis sechsten Fachsemester.
+(10) studierte im Bachelorstudiengang Informatik,
+eine Teilnehmer:in studierte bereits im Master Informatik,
+eine weitere im Bachelor Elektro- und Informations-?technik.
 //
-Die restlichen 3 verteilen sich jeweils auf
-Bachelor Informatik (Fachsemester 1-3),
-Master Informatik
-und
-Bachelor Elektro- und Informations-?technik.
-//
-Von den Teilnehmer:innen gaben
-5 an, weniger als Ein Jahr berufliche Programmier-Erfahrung zu haben,
+In einer anonymen Umfrage zum Ende des Workshops
+gaben 5 Personen an,
+weniger als ein Jahr berufliche Programmier-Erfahrung zu haben,
 wobei jeweils 3 Teilnehmer:innen
-Ein bis Zwei Jahre
+ein bis zwei Jahre
 und
-Zwei bis Fünf Jahre
+zwei bis fünf Jahre
 Programmier-Erfahrung angaben.
 
-#figure(
-  grid(
-    columns: 2,
-    image("../figures/pie_studi.png", width: 90%),
-    image("../figures/pie_arbeit.png", width: 90%)
-    ),
-    caption: "Verteilung der Teilnehmer:innen auf Studiengang (links) und Berufliche Programmiererfahrung (rechts)"
-
-  )
-
+Als Versuch einer Evaluation
+wurde den Teilnehmer:innen am Ende des Workshops
+Code-Beispiele mit bewusst platzierten Schwachstellen vorgelegt,
+mit der Bitte, Art und Position der Schwachstelle zu benennen.
 //
-// - Studierende
-// 	- Informatik
-// 		- Bachelor
-// 		- Master
+Teilweise wurden die Schwachstellen richtig identifiziert,
+teilweise wurden korrekte Code-zeilen als Schwachstelle markiert.
 //
-// Es wurde
-// zwar
-// keine strukturierte Evaluation
-// durchgeführt,
-// aber
+Vor allem aufgrund des fehlenden Vorher/-Nachher-Vergleichs
+fehlt die Grundlage zur Evaluation des Workshops,
+daher scheint das Ergebnis nicht aussagekräftig
+und soll hier nicht weiter berücksichtigt werden.
+
 Aus Reaktionen während der Veranstaltung
 und
 in Gesprächen
