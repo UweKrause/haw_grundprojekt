@@ -10,7 +10,7 @@ wurden auf verschiedene Weise gesammelt
 und teilweise in die Weiterentwicklung aufgenommen.
 
 
-== Durchführung eines Workshops an der HAW mit 12 Teilnehmer:innen
+== Verwendung für einen geführten Workshop an der HAW Hamburg mit 12 Teilnehmer:innen
 
 Während der sogenannten "[Workshop Week]"
 an der
@@ -87,12 +87,11 @@ geäußert.
 
 (TODO)
 
-== Durchführung eines Workshops auf der NooK mit 34 Teilnehmer:innen
+== Verwendung für einen geführten Workshop auf einer kleinen IT-Konferenz (NooK) mit 34 Teilnehmer:innen
 
 (TODO)
 
-
-== Durchführung eines Workshops auf dem Chaos Communication Congress (39c3) mit ca. 60 -- 70 Teilnehmer:innen
+== Verwendung für einen geführten Workshop auf einer großen IT-Konferenz (39c3) mit ca. 60 -- 70 Teilnehmer:innen
 
 (TODO)
 
